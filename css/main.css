@@ -39,13 +39,10 @@ ul {
 ul li {
     list-style: none;
 }
-ul li .description p {
-    margin: 0;
-}
-ul li .description p.course {
+p.course {
     font-size: 0.9rem;
 }
-ul li .description p.institution {
+p.institution {
     font-size: 0.75rem;
     color: rgba(0,0,0,0.6);
 }

@@ -41,3 +41,16 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+ul.posts li .description p {
+  margin: 0;
+}
+
+ul.posts li .description p.course {
+  font-size: 0.9rem;
+}
+
+ul.posts li .description p.institution {
+  font-size: 0.75rem;
+  color: rgba(0,0,0,0.6);
+}

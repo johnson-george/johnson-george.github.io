@@ -32,25 +32,20 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
-ul.posts { 
+ul { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
-
-ul.posts li {
+ul li {
     list-style: none;
 }
-
-ul.posts li .description p {
-  margin: 0;
+ul li .description p {
+    margin: 0;
 }
-
-ul.posts li .description p.course {
-  font-size: 0.9rem;
+ul li .description p.course {
+    font-size: 0.9rem;
 }
-
-ul.posts li .description p.institution {
-  font-size: 0.75rem;
-  color: rgba(0,0,0,0.6);
+ul li .description p.institution {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.6);
 }

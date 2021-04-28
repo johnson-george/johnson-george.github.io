@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | George Johnson</title>
-    <link>/project/</link>
-      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
-    <description>Projects</description>
+    <title>Errata | George Johnson</title>
+    <link>/tag/errata/</link>
+      <atom:link href="/tag/errata/index.xml" rel="self" type="application/rss+xml" />
+    <description>Errata</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 28 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
-      <title>Projects</title>
-      <link>/project/</link>
+      <title>Errata</title>
+      <link>/tag/errata/</link>
     </image>
     
     <item>

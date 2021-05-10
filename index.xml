@@ -33,6 +33,16 @@
     </item>
     
     <item>
+      <title>Schwartz Errata</title>
+      <link>/note/schwartz/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>/note/schwartz/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+&lt;p&gt;$$ \int_{-\infty}^\infty \exp(-x^2)  \mathrm{d}x = \sqrt{\pi}$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>My first blog post</title>
       <link>/blog/first/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
@@ -55,9 +65,9 @@
     
     <item>
       <title>Nakahara Errata</title>
-      <link>/note/example/</link>
+      <link>/note/nakahara/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>/note/example/</guid>
+      <guid>/note/nakahara/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;$$ \int_{-\infty}^\infty \exp(-x^2)  \mathrm{d}x = \sqrt{\pi}$$&lt;/p&gt;
 </description>

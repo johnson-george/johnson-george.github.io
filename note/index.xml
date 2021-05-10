@@ -27,8 +27,8 @@
       <link>/note/nakahara/</link>
       <pubDate>Wed, 28 Apr 2021 00:00:00 +0000</pubDate>
       <guid>/note/nakahara/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;$$ \int_{-\infty}^\infty \exp(-x^2)  \mathrm{d}x = \sqrt{\pi}$$&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;/notes/nakahara_errata_may_2021.pdf&#34; target=&#34;_blank&#34;&gt;Nakahara Errata.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Over the course of my PhD I worked my way through the first 12 chapters of Geometry, Topology and Physics by Mikio Nakahara. The book is my personal recommendation for any theoretical physicist wanting a modern and comprehensive overview of the main results of differential geometry and algebraic topology. There are, however, numerous typos and small errors, and I have made my best attempt to log them here.&lt;/p&gt;
 </description>
     </item>
     

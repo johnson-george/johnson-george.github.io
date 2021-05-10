@@ -769,7 +769,7 @@ longestfrom = {k : [seq[-1]]}
 
 for i in reversed(range(k)):
     # restrict the dictionary to those j with a_j &gt; a_i
-    lf = {j: longestfrom[j] in range(i, k+1) if seq[j] &gt; seq[i]}
+    lf = {j: longestfrom[j] for j in range(i, k+1) if seq[j] &gt; seq[i]}
     # from these choose m such that a_m begins the longest subsequence
     m = max(lf, key = lambda j: len(lf.get(j)), default = 0)
     # append this subsequence to a_i

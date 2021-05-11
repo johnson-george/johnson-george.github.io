@@ -5,12 +5,22 @@
     <link>/note/</link>
       <atom:link href="/note/index.xml" rel="self" type="application/rss+xml" />
     <description>Notes</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 10 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
       <title>Notes</title>
       <link>/note/</link>
     </image>
+    
+    <item>
+      <title>General Relativity Practice Paper</title>
+      <link>/note/collection/</link>
+      <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
+      <guid>/note/collection/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/notes/b5_collection_may_2021.pdf&#34; target=&#34;_blank&#34;&gt;General Relativity Paper.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I taught General Relativity to third year undergraduate students at Oxford for six years. During this period I wrote a practice paper that the students would usually sit in late April. I hope it provides good practice at a range of problems.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Schwartz Errata</title>

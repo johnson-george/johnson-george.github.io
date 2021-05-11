@@ -17,8 +17,8 @@
       <link>/note/schwartz/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
       <guid>/note/schwartz/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;$$ \int_{-\infty}^\infty \exp(-x^2)  \mathrm{d}x = \sqrt{\pi}$$&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;/notes/schwartz_errata_may_2021.pdf&#34; target=&#34;_blank&#34;&gt;Schwartz Errata.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Matthew Schwartz keeps a list of corrections for QFT and the Standard Model on &lt;a href=&#34;https://schwartzqft.fas.harvard.edu/corrections&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the book&amp;rsquo;s website&lt;/a&gt;. I noticed very few errors from earlier parts of the book that were absent from this list, but in later chapters I found significantly more which hadn&amp;rsquo;t been recorded. I have made my best attempt to log them here.&lt;/p&gt;
 </description>
     </item>
     

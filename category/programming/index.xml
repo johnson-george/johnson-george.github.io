@@ -20,31 +20,31 @@
       <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
 &lt;p&gt;Given a finite sequence $(a_1, a_2, \ldots, a_k)$ of real numbers, how can one find the longest subsequence satisfying $a_{n(i+1)} &amp;gt; a_{n(i)}$ for all $i$? A sequence of length $k$ has $2^k$ subsequences and checking each case may not be feasible.&lt;/p&gt;
 &lt;h2 id=&#34;a-solution&#34;&gt;A Solution&lt;/h2&gt;
-&lt;p&gt;Suppose our sequence begins $(1,10,11,12,2,3,\ldots)$. If we include $a_1 = 1$ in our subsequence, we are left with the decision whether to next take $a_2 = 10$, thus committing to the exclusion of $a_5$ and $a_6$, or whether perhaps to skip the second to fourth elements in the hope of finding more elements less than $a_2$ further down the line. Which decision is better could depend on elements all the way to the end of the sequence.&lt;/p&gt;
-&lt;p&gt;Thus, one is tempted to consider starting at the other end of the sequence. Suppose we begin with $a_k$. Clearly there is nowhere else to go, and our longest subsequence will have length one. Now suppose we begin with $a_{k-1}$. We have hardly more choice in this case: we include $a_k$ if it is greater than $a_{k-1}$, and not otherwise.&lt;/p&gt;
+&lt;p&gt;Suppose our sequence begins $(1,10,11,12,2,3,\ldots)$. If we begin our subsequence with $a_1 = 1$, we are left with the decision whether to next take $a_2 = 10$, thus committing to the exclusion of $a_5$ and $a_6$, or whether perhaps to skip the second to fourth elements in the hope of finding more elements less than $a_2$ further down the line. Which decision is better could depend on elements all the way to the end of the sequence.&lt;/p&gt;
+&lt;p&gt;Thus, one is tempted to start thinking from the other end. Suppose we begin with $a_k$. Clearly there is nowhere else to go, and our longest subsequence will have length one. Now suppose we begin with $a_{k-1}$. We have hardly more choice in this case: we include $a_k$ if it is greater than $a_{k-1}$, and not otherwise.&lt;/p&gt;
 &lt;p&gt;Now suppose we begin with $a_{k-2}$. We have already determined the longest subsequence beginning with $a_i$ for each $i &amp;gt; k-2$. Thus, we need only check which such $a_i$ satisfy $a_i &amp;gt; a_{k-2}$, and of those, prepend $a_{k-2}$ to the longest corresponding subseqeuence. This will generate the longest subsequence beginning with $a_{k-2}$.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s clear we can continue this process, tracking backwards through the sequence to determine the longest ascending subsequence beginning with each element, and once this is is complete we can choose the longest among them as our solution.&lt;/p&gt;
 &lt;h2 id=&#34;an-implementation&#34;&gt;An Implementation&lt;/h2&gt;
 &lt;p&gt;One way to implement this idea uses Python dictionaries:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;seq = [1,10,11,12,2,3,4,13,14,15,5,6,7,8]
-k = len(seq)
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = [1,10,11,12,2,3,4,13,14,15,5,6,7,8]
+k = len(a)
 
 # prepend a small number a_0 so that the longest subsequence necessarily begins with a_0
-seq = [min(seq)-1] + seq
+a = [min(a)-1] + a
 # create a dictionary of the longest subsequences starting from a_i
-longestfrom = {k : [seq[-1]]}
+longsubseq = {k : [a[-1]]}
 
 for i in reversed(range(k)):
     # restrict the dictionary to those j with a_j &amp;gt; a_i
-    lf = {j: longestfrom[j] for j in range(i, k+1) if seq[j] &amp;gt; seq[i]}
+    lss = {j: longsubseq[j] for j in range(i, k+1) if a[j] &amp;gt; a[i]}
     # from these choose m such that a_m begins the longest subsequence
-    m = max(lf, key = lambda j: len(lf.get(j)), default = 0)
+    m = max(lss, key = lambda j: len(lss.get(j)), default = 0)
     # append this subsequence to a_i
-    if m == 0: subseq = [seq[i]]
-    else: subseq = [seq[i]] + longestfrom[m]
-    longestfrom[i] = subseq
+    if m == 0: subseq = [a[i]]
+    else: subseq = [a[i]] + longsubseq[m]
+    longsubseq[i] = subseq
 
-solution = longestfrom[0][1:] 
+solution = longsubseq[0][1:] 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I don&amp;rsquo;t know that Python dictionaries are necessarily the fastest way to implement this idea, but they are conceptually clean at least.&lt;/p&gt;
 </description>

@@ -248,7 +248,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.c677a1b299b7aa54c259138726d4b83d.css" />
+  <link rel="stylesheet" href="/css/wowchemy.1f9810da2996e4f1f2767db7eda051be.css" />
 
   
 
@@ -755,7 +755,7 @@
 <h2 id="a-solution">A Solution</h2>
 <p>Suppose our sequence begins $(1,10,11,12,2,3,\ldots)$. If we begin our subsequence with $a_1 = 1$, we are left with the decision whether to next take $a_2 = 10$, thus committing to the exclusion of $a_5$ and $a_6$, or whether perhaps to skip the second to fourth elements in the hope of finding more elements less than $a_2$ further down the line. Which decision is better could depend on elements all the way to the end of the sequence.</p>
 <p>Thus, one is tempted to start thinking from the other end. Suppose we begin with $a_k$. Clearly there is nowhere else to go, and our longest subsequence will have length one. Now suppose we begin with $a_{k-1}$. We have hardly more choice in this case: we include $a_k$ if it is greater than $a_{k-1}$, and not otherwise.</p>
-<p>Now suppose we begin with $a_{k-2}$. We have already determined the longest subsequence beginning with $a_i$ for each $i &gt; k-2$. Thus, we need only check which such $a_i$ satisfy $a_i &gt; a_{k-2}$, and of those, prepend $a_{k-2}$ to the longest corresponding subseqeuence. This will generate the longest subsequence beginning with $a_{k-2}$.</p>
+<p>Now suppose we begin with $a_{k-2}$. We have already determined the longest subsequence beginning with $a_i$ for each $i &gt; k-2$. Thus, we need only check which such $a_i$ satisfy $a_i &gt; a_{k-2}$, and of those, prepend $a_{k-2}$ to the longest corresponding subsequence. This will generate the longest subsequence beginning with $a_{k-2}$.</p>
 <p>It&rsquo;s clear we can continue this process, tracking backwards through the sequence to determine the longest ascending subsequence beginning with each element, and once this is is complete we can choose the longest among them as our solution.</p>
 <h2 id="an-implementation">An Implementation</h2>
 <p>One way to implement this idea uses Python dictionaries:</p>
@@ -771,7 +771,7 @@ for i in reversed(range(k)):
     # restrict the dictionary to those j with a_j &gt; a_i
     lss = {j: longsubseq[j] for j in range(i, k+1) if a[j] &gt; a[i]}
     # from these choose m such that a_m begins the longest subsequence
-    m = max(lss, key = lambda j: len(lss.get(j)), default = 0)
+    m = max(lss, key = lambda j: len(lss[j]), default = 0)
     # append this subsequence to a_i
     if m == 0: subseq = [a[i]]
     else: subseq = [a[i]] + longsubseq[m]

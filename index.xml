@@ -53,7 +53,7 @@
 &lt;p&gt;Suppose our sequence begins $(1,10,11,12,2,3,\ldots)$. If we begin our subsequence with $a_1 = 1$, we are left with the decision whether to next take $a_2 = 10$, thus committing to the exclusion of $a_5$ and $a_6$, or whether perhaps to skip the second to fourth elements in the hope of finding more elements less than $a_2$ further down the line. Which decision is better could depend on elements all the way to the end of the sequence.&lt;/p&gt;
 &lt;p&gt;Thus, one is tempted to start thinking from the other end. Suppose we begin with $a_k$. Clearly there is nowhere else to go, and our longest subsequence will have length one. Now suppose we begin with $a_{k-1}$. We have hardly more choice in this case: we include $a_k$ if it is greater than $a_{k-1}$, and not otherwise.&lt;/p&gt;
 &lt;p&gt;Now suppose we begin with $a_{k-2}$. We have already determined the longest subsequence beginning with $a_i$ for each $i &amp;gt; k-2$. Thus, we need only check which such $a_i$ satisfy $a_i &amp;gt; a_{k-2}$, and of those, prepend $a_{k-2}$ to the longest corresponding subsequence. This will generate the longest subsequence beginning with $a_{k-2}$.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s clear we can continue this process, tracking backwards through the sequence to determine the longest ascending subsequence beginning with each element, and once this is is complete we can choose the longest among them as our solution.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s clear we can continue this process, tracking backwards through the sequence to determine the longest ascending subsequence beginning with each element, and once this is complete we can choose the longest among them as our solution.&lt;/p&gt;
 &lt;h2 id=&#34;an-implementation&#34;&gt;An Implementation&lt;/h2&gt;
 &lt;p&gt;One way to implement this idea uses Python dictionaries:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;a = [1,10,11,12,2,3,4,13,14,15,5,6,7,8]
@@ -93,7 +93,7 @@ solution = longsubseq[0][1:]
     <item>
       <title>Primordial Black Hole Constraints with Large Extra Dimensions</title>
       <link>/publication/pbhconstraints/</link>
-      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 May 2020 00:00:00 +0000</pubDate>
       <guid>/publication/pbhconstraints/</guid>
       <description></description>
     </item>
@@ -111,6 +111,14 @@ solution = longsubseq[0][1:]
       <link>/publication/chargedtunnelling/</link>
       <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
       <guid>/publication/chargedtunnelling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hawking Radiation of Extended Objects</title>
+      <link>/publication/extended/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/extended/</guid>
       <description></description>
     </item>
     

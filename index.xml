@@ -5,12 +5,33 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>George Johnson</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
       <title>George Johnson</title>
       <link>/</link>
     </image>
+    
+    <item>
+      <title>Utilities Problem on General Compact Surfaces</title>
+      <link>/blog/graph/</link>
+      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/blog/graph/</guid>
+      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
+&lt;p&gt;It is well known that one cannot connect each of three homes to each of three utilities, without any of the lines of connection crossing, if those lines are restricted to lie in a plane (or equivalently, on the surface of a sphere). Mathematically, we say that the complete bipartite graph $K_{3,3}$ is not planar.&lt;/p&gt;
+&lt;p&gt;However, it &lt;em&gt;is&lt;/em&gt; possible to draw such a graph on the surface of a torus. Indeed, on a torus it is possible to connect each of four homes to each of four utilities, without any lines of connection crossing (an exercise for the curious).&lt;/p&gt;
+&lt;p&gt;A natural question to ask is: what is the surface of lowest genus $g$ on which it is possible to connect $n$ homes to $n$ utilities, without crossings?&lt;/p&gt;
+&lt;h2 id=&#34;a-bound&#34;&gt;A Bound&lt;/h2&gt;
+&lt;p&gt;Here is a lower bound on the genus required. Suppose the complete bipartite graph $K_{n,n}$ can be drawn without crossings on the genus-$g$ surface. Let $e = n^2$ denote the number of edges in the graph, $f$ the number of faces, and let $\chi = 2 - 2g$ denote the Euler characteristic of the surface.&lt;/p&gt;
+&lt;p&gt;The shortest cycle in $K_{n,n}$ has length four. Thus each face of the graph must have at least four sides, and since each side is shared by two faces, we must have&lt;/p&gt;
+&lt;p&gt;$$ 2 e \geq 4 f  \ .$$&lt;/p&gt;
+&lt;p&gt;By definition, we have $2n - e + f = \chi$. Thus we can write the above inequality as&lt;/p&gt;
+&lt;p&gt;$$ \frac{e}{2} \leq 2n - \chi = 2(n + g - 1) \ .$$&lt;/p&gt;
+&lt;p&gt;Thus we find that&lt;/p&gt;
+&lt;p&gt;$$ g \geq \frac{(n-2)^2}{4} \ . $$&lt;/p&gt;
+&lt;p&gt;We hence find (for example) that for $n=3,4$ we must have $g \geq 1$, whilst for $n = 5$ we must have $g \geq 3$.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Algebraic Topology Solutions</title>

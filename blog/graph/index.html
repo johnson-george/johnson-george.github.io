@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Lecturer in Applied Mathematics" />
+  <meta name="description" content="Given $n$ homes and $n$ utilities living on some compact surface, can we connect each home to each utility without any of the connections crossing?" />
 
   
-  <link rel="alternate" hreflang="en-us" href="/categories/" />
+  <link rel="alternate" hreflang="en-us" href="/blog/graph/" />
 
   
 
@@ -268,8 +268,6 @@
   
 
   
-    <link rel="alternate" href="/categories/index.xml" type="application/rss+xml" title="George Johnson" />
-  
 
   
     <link rel="manifest" href="/index.webmanifest" />
@@ -278,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="/categories/" />
+  <link rel="canonical" href="/blog/graph/" />
 
   
   
@@ -295,14 +293,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="George Johnson" />
-  <meta property="og:url" content="/categories/" />
-  <meta property="og:title" content="Categories | George Johnson" />
-  <meta property="og:description" content="Lecturer in Applied Mathematics" /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:url" content="/blog/graph/" />
+  <meta property="og:title" content="Utilities Problem on General Compact Surfaces | George Johnson" />
+  <meta property="og:description" content="Given $n$ homes and $n$ utilities living on some compact surface, can we connect each home to each utility without any of the connections crossing?" /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2021-09-09T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2021-09-09T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2021-09-09T00:00:00&#43;00:00">
   
 
   
@@ -313,15 +315,17 @@
 
   
 
+  
 
 
 
 
-  <title>Categories | George Johnson</title>
+
+  <title>Utilities Problem on General Compact Surfaces | George Johnson</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="36a3ab4e9c46c9f28c8530e16928f6ee" >
 
   
   
@@ -656,65 +660,287 @@
   </div>
 
   <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Utilities Problem on General Compact Surfaces</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      George Johnson</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 9, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/graph-theory/">Graph Theory</a></span>
+  
+
+</div>
+
     
 
 
 
 
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Categories</h1>
-
-  
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/graph-theory/" >Graph Theory</a></h2>
-      <div class="article-style">
-        
-      </div>
+    <div class="article-style">
+      <h2 id="the-problem">The Problem</h2>
+<p>It is well known that one cannot connect each of three homes to each of three utilities, without any of the lines of connection crossing, if those lines are restricted to lie in a plane (or equivalently, on the surface of a sphere). Mathematically, we say that the complete bipartite graph $K_{3,3}$ is not planar.</p>
+<p>However, it <em>is</em> possible to draw such a graph on the surface of a torus. Indeed, on a torus it is possible to connect each of four homes to each of four utilities, without any lines of connection crossing (an exercise for the curious).</p>
+<p>A natural question to ask is: what is the surface of lowest genus $g$ on which it is possible to connect $n$ homes to $n$ utilities, without crossings?</p>
+<h2 id="a-bound">A Bound</h2>
+<p>Here is a lower bound on the genus required. Suppose the complete bipartite graph $K_{n,n}$ can be drawn without crossings on the genus-$g$ surface. Let $e = n^2$ denote the number of edges in the graph, $f$ the number of faces, and let $\chi = 2 - 2g$ denote the Euler characteristic of the surface.</p>
+<p>The shortest cycle in $K_{n,n}$ has length four. Thus each face of the graph must have at least four sides, and since each side is shared by two faces, we must have</p>
+<p>$$ 2 e \geq 4 f  \ .$$</p>
+<p>By definition, we have $2n - e + f = \chi$. Thus we can write the above inequality as</p>
+<p>$$ \frac{e}{2} \leq 2n - \chi = 2(n + g - 1) \ .$$</p>
+<p>Thus we find that</p>
+<p>$$ g \geq \frac{(n-2)^2}{4} \ . $$</p>
+<p>We hence find (for example) that for $n=3,4$ we must have $g \geq 1$, whilst for $n = 5$ we must have $g \geq 3$.</p>
+
     </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/algorithms/" >Algorithms</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
 
-  
+    
 
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu613f47e83fcc2c23947176e8611d720b_531182_270x270_fill_q75_lanczos_center.jpg" alt="George Johnson">
+    
+
+    <div class="media-body">
+      <h5 class="card-title">George Johnson</h5>
+      <h6 class="card-subtitle">Lecturer in Applied Mathematics</h6>
+      <p class="card-text">My research interests include theoretical aspects of black holes and their connections with cosmology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/johnson-george" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://physics.stackexchange.com/users/30217/gj255" target="_blank" rel="noopener">
+        <i class="fab fa-stack-exchange"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://inspirehep.net/" target="_blank" rel="noopener">
+        <i class="ai ai-inspire"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

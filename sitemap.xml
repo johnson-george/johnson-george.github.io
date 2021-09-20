@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/category/graph-theory/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/quantum-field-theory/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/sm1/</loc>
+    <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/graph-theory/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/blog/graph/</loc>

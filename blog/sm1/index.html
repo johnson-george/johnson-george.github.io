@@ -248,7 +248,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.3161f3bfda22d6e096a43893507f9d55.css" />
+  <link rel="stylesheet" href="/css/wowchemy.bc7601bbee977136e8a688b9334919d1.css" />
 
   
 
@@ -294,7 +294,7 @@
   
   <meta property="og:site_name" content="George Johnson" />
   <meta property="og:url" content="/blog/sm1/" />
-  <meta property="og:title" content="Symmetries of the Standard Model I: Gauge Symmetries | George Johnson" />
+  <meta property="og:title" content="Symmetries of the Standard Model I: Overview | George Johnson" />
   <meta property="og:description" content="Symmetries." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
@@ -321,7 +321,7 @@
 
 
 
-  <title>Symmetries of the Standard Model I: Gauge Symmetries | George Johnson</title>
+  <title>Symmetries of the Standard Model I: Overview | George Johnson</title>
 </head>
 
 
@@ -681,7 +681,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Symmetries of the Standard Model I: Gauge Symmetries</h1>
+  <h1>Symmetries of the Standard Model I: Overview</h1>
 
   
 
@@ -748,8 +748,99 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h2 id="the-problem">The Problem</h2>
-<p>Hello.</p>
+      <h2 id="introduction">Introduction</h2>
+<p>The Standard Model is a complicated quantum field theory. Understanding it in detail takes time, but understanding the symmetries of the theory provides a framework with which to understand these details.</p>
+<p>Symmetries can be classified along many lines. They can be continuous or discrete, global or local, approximate or exact, anomalous, spontaneously broken, and so on. In this series, we will elaborate on these classifications in Part I, and give a schematic overview of the Standard Model. In Parts II and III we will consider global continuous symmetries, first from the perspective of the low-energy theory, and then from the perspective of the high-energy theory. In Part IV we will consider the discrete symmetries $C$, $P$, and $T$. In each case we will classify the various symmetries according to their exactness, whether they are respected by the vacuum, and whether they suffer quantum anomalies.</p>
+<h2 id="gauge-symmetries">Gauge Symmetries</h2>
+<p>The starting point for the construction of the Standard Model is the gauge group</p>
+<p>$$ SU(3)_C \times SU(2)_L \times U(1)_Y \ , $$</p>
+<p>where the first factor represents the colour symmetry of <strong>quantum chromodynamics (QCD)</strong>, and the second two factors (known as weak isospin and hypercharge) represent the symmetry of the <strong>electroweak</strong> interactions.</p>
+<h2 id="the-field-content">The Field Content</h2>
+<p>The Standard Model contains gauge bosons corresponding to each of the gauge groups described above, along with $n_g = 3$ generations of fermions in the following representations, as well as a single scalar field, the Higgs:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$SU(3)_C$</th>
+<th>$SU(2)_L$</th>
+<th>$U(1)_Y$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_L$</td>
+<td>Fundamental</td>
+<td>Fundamental</td>
+<td>$Y = 1/6$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>Fundamental</td>
+<td>Trivial</td>
+<td>$Y = 2/3$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>Fundamental</td>
+<td>Trivial</td>
+<td>$Y = -1/3$</td>
+</tr>
+<tr>
+<td>$L_L$</td>
+<td>Trivial</td>
+<td>Fundamental</td>
+<td>$Y = -1/2$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>Trivial</td>
+<td>Trivial</td>
+<td>$Y = -1$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>Trivial</td>
+<td>Trivial</td>
+<td>$Y = 0$</td>
+</tr>
+<tr>
+<td>$\phi$</td>
+<td>Trivial</td>
+<td>Fundamental</td>
+<td>$Y = 1/2$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-lagrangian">The Lagrangian</h2>
+<p>The most general renormalizable Lagrangian with the above field content and gauge symmetries is the Standard Model. We can split this Lagrangian into four types of term:</p>
+<ol>
+<li>Kinetic terms for the gauge fields.</li>
+<li>Kinetic terms for the fermions, including coupling to the gauge fields.</li>
+<li>Kinetic terms for the Higgs.</li>
+<li>Yukawa couplings between the fermions and the Higgs.</li>
+</ol>
+<p>Schematically, this Lagrangian is:</p>
+<p>$$ \begin{align} \mathcal{L} = &amp;-\frac{1}{4} F^a_{\mu \nu} F^{a\mu \nu} \\ &amp;+ \bar{\psi} i  \gamma^\mu D_\mu \psi \\ &amp;+ |D_\mu \phi|^2 + V(\phi) \\ &amp;- Y_d \bar{Q}_L \phi d_R - Y_u \epsilon^{ab}\bar{Q}_{La} \phi_b d_R + \mathrm{h.c.} \end{align} $$</p>
+<p>There is an additional group of terms one can add to the Lagrangian whose effects are more subtle. These are the theta terms, one for each factor of the gauge group:</p>
+<p>$$ \mathcal{L}_\theta =  \frac{\theta g^2}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma} F^a_{\mu \nu} F^a_{\rho \sigma} $$</p>
+<p>We will ignore these terms until Part IV.</p>
+<h2 id="exact-symmetries">Exact Symmetries</h2>
+<p>The Lagrangian above has many approximate global symmetries which we will discuss in turn, depending on the various parameters that appear in the theory. However, it has only two exact global continuous symmetries, for general values of the parameters, known as baryon number and lepton number. These symmetries are not enforced upon the theory &mdash; we sometimes say they are accidental &mdash; rather it is simply not possible to write down renormalizable terms respecting the overall gauge symmetry which violate those symmetries. Note that all gauge symmetries are exact.</p>
+<h2 id="spontaneous-symmetry-breaking">Spontaneous Symmetry Breaking</h2>
+<p>A symmetry is spontaneously broken if it is respected by the Lagrangian but not by the vacuum of the theory. Spontaneous symmetry breaking is typically caused by fields acquiring a non-zero expectation value in the vacuum. In the Standard Model, there are two sources of spontaneous symmetry breaking.</p>
+<ol>
+<li>
+<p>The Higgs field $\phi$ acquires a non-zero VEV. This breaks the gauge symmetry $$ SU(3)_C \times SU(2)_L \times U(1)_Y \to SU(3)_C \times U(1)_Q \ .$$
+It also breaks some approximate global symmetries. This is known as <em>electroweak symmetry breaking</em>. The unbroken $U(1)_Q$ symmetry is the symmetry of <strong>quantum electrodynamics (QED)</strong>. We will discuss this further in Part III.</p>
+</li>
+<li>
+<p>At a lower energy scale, the quark bilinears $\bar{q}q$ acquire a non-zero VEV (equal in magnitude for each flavour). This breaks no further gauge symmetries, but does break some approximate global symmetries. This is known as <em>chiral symmetry breaking</em>. We will discuss this further in Part II.</p>
+</li>
+</ol>
+<h2 id="anomalies">Anomalies</h2>
+<p>A symmetry is anomalous if it is respected by the Lagrangian but not by the path integral measure. For a symmetry $H$ with generators $t^a$ and a gauge symmetry $G$ with generators $T^a$, we say that $H$ suffers a $G$-anomaly if the <em>anomaly coefficient</em></p>
+<p>$$ \mathrm{tr}(\gamma^5 t^a \{T^b, T^c\}) $$</p>
+<p>is non-zero. In principle it is possible for anomalies to arise from diagrams with two different gauge currents (three different currents in total), but this doesn&rsquo;t happen in the Standard Model since such diagrams always involve exactly one $SU(n)$ generator (either $SU(2)_L$ or $SU(3)_C$), which is traceless in any representation. It is a somewhat magical feature of the Standard Model, which one should check from the table of field representations above, that no gauge symmetry $H$ suffers a $G$-anomaly for any gauge symmetry $G$. This is necessary for the theory to be consistent. Nevertheless, there are several global symmetries $H$ which suffer $G$-anomalies.</p>
 <h2 id="summary">Summary</h2>
 <table>
 <thead>
@@ -762,13 +853,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Electroweak</td>
-<td>Yes</td>
+<td>QCD</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 </tr>
 <tr>
-<td>QCD</td>
+<td>Electroweak</td>
+<td>Down to $U(1)_Q$</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>QED</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>

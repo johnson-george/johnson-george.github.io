@@ -13,12 +13,103 @@
     </image>
     
     <item>
-      <title>Symmetries of the Standard Model I: Gauge Symmetries</title>
+      <title>Symmetries of the Standard Model I: Overview</title>
       <link>/blog/sm1/</link>
       <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
       <guid>/blog/sm1/</guid>
-      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Hello.&lt;/p&gt;
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The Standard Model is a complicated quantum field theory. Understanding it in detail takes time, but understanding the symmetries of the theory provides a framework with which to understand these details.&lt;/p&gt;
+&lt;p&gt;Symmetries can be classified along many lines. They can be continuous or discrete, global or local, approximate or exact, anomalous, spontaneously broken, and so on. In this series, we will elaborate on these classifications in Part I, and give a schematic overview of the Standard Model. In Parts II and III we will consider global continuous symmetries, first from the perspective of the low-energy theory, and then from the perspective of the high-energy theory. In Part IV we will consider the discrete symmetries $C$, $P$, and $T$. In each case we will classify the various symmetries according to their exactness, whether they are respected by the vacuum, and whether they suffer quantum anomalies.&lt;/p&gt;
+&lt;h2 id=&#34;gauge-symmetries&#34;&gt;Gauge Symmetries&lt;/h2&gt;
+&lt;p&gt;The starting point for the construction of the Standard Model is the gauge group&lt;/p&gt;
+&lt;p&gt;$$ SU(3)_C \times SU(2)_L \times U(1)_Y \ , $$&lt;/p&gt;
+&lt;p&gt;where the first factor represents the colour symmetry of &lt;strong&gt;quantum chromodynamics (QCD)&lt;/strong&gt;, and the second two factors (known as weak isospin and hypercharge) represent the symmetry of the &lt;strong&gt;electroweak&lt;/strong&gt; interactions.&lt;/p&gt;
+&lt;h2 id=&#34;the-field-content&#34;&gt;The Field Content&lt;/h2&gt;
+&lt;p&gt;The Standard Model contains gauge bosons corresponding to each of the gauge groups described above, along with $n_g = 3$ generations of fermions in the following representations, as well as a single scalar field, the Higgs:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;$SU(3)_C$&lt;/th&gt;
+&lt;th&gt;$SU(2)_L$&lt;/th&gt;
+&lt;th&gt;$U(1)_Y$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$Q_L$&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;$Y = 1/6$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$u_R$&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;$Y = 2/3$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$d_R$&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;$Y = -1/3$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$L_L$&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;$Y = -1/2$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$e_R$&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;$Y = -1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$\nu_R$&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;$Y = 0$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$\phi$&lt;/td&gt;
+&lt;td&gt;Trivial&lt;/td&gt;
+&lt;td&gt;Fundamental&lt;/td&gt;
+&lt;td&gt;$Y = 1/2$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;the-lagrangian&#34;&gt;The Lagrangian&lt;/h2&gt;
+&lt;p&gt;The most general renormalizable Lagrangian with the above field content and gauge symmetries is the Standard Model. We can split this Lagrangian into four types of term:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Kinetic terms for the gauge fields.&lt;/li&gt;
+&lt;li&gt;Kinetic terms for the fermions, including coupling to the gauge fields.&lt;/li&gt;
+&lt;li&gt;Kinetic terms for the Higgs.&lt;/li&gt;
+&lt;li&gt;Yukawa couplings between the fermions and the Higgs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Schematically, this Lagrangian is:&lt;/p&gt;
+&lt;p&gt;$$ \begin{align} \mathcal{L} = &amp;amp;-\frac{1}{4} F^a_{\mu \nu} F^{a\mu \nu} \\ &amp;amp;+ \bar{\psi} i  \gamma^\mu D_\mu \psi \\ &amp;amp;+ |D_\mu \phi|^2 + V(\phi) \\ &amp;amp;- Y_d \bar{Q}_L \phi d_R - Y_u \epsilon^{ab}\bar{Q}_{La} \phi_b d_R + \mathrm{h.c.} \end{align} $$&lt;/p&gt;
+&lt;p&gt;There is an additional group of terms one can add to the Lagrangian whose effects are more subtle. These are the theta terms, one for each factor of the gauge group:&lt;/p&gt;
+&lt;p&gt;$$ \mathcal{L}_\theta =  \frac{\theta g^2}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma} F^a_{\mu \nu} F^a_{\rho \sigma} $$&lt;/p&gt;
+&lt;p&gt;We will ignore these terms until Part IV.&lt;/p&gt;
+&lt;h2 id=&#34;exact-symmetries&#34;&gt;Exact Symmetries&lt;/h2&gt;
+&lt;p&gt;The Lagrangian above has many approximate global symmetries which we will discuss in turn, depending on the various parameters that appear in the theory. However, it has only two exact global continuous symmetries, for general values of the parameters, known as baryon number and lepton number. These symmetries are not enforced upon the theory &amp;mdash; we sometimes say they are accidental &amp;mdash; rather it is simply not possible to write down renormalizable terms respecting the overall gauge symmetry which violate those symmetries. Note that all gauge symmetries are exact.&lt;/p&gt;
+&lt;h2 id=&#34;spontaneous-symmetry-breaking&#34;&gt;Spontaneous Symmetry Breaking&lt;/h2&gt;
+&lt;p&gt;A symmetry is spontaneously broken if it is respected by the Lagrangian but not by the vacuum of the theory. Spontaneous symmetry breaking is typically caused by fields acquiring a non-zero expectation value in the vacuum. In the Standard Model, there are two sources of spontaneous symmetry breaking.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The Higgs field $\phi$ acquires a non-zero VEV. This breaks the gauge symmetry $$ SU(3)_C \times SU(2)_L \times U(1)_Y \to SU(3)_C \times U(1)_Q \ .$$
+It also breaks some approximate global symmetries. This is known as &lt;em&gt;electroweak symmetry breaking&lt;/em&gt;. The unbroken $U(1)_Q$ symmetry is the symmetry of &lt;strong&gt;quantum electrodynamics (QED)&lt;/strong&gt;. We will discuss this further in Part III.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;At a lower energy scale, the quark bilinears $\bar{q}q$ acquire a non-zero VEV (equal in magnitude for each flavour). This breaks no further gauge symmetries, but does break some approximate global symmetries. This is known as &lt;em&gt;chiral symmetry breaking&lt;/em&gt;. We will discuss this further in Part II.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;anomalies&#34;&gt;Anomalies&lt;/h2&gt;
+&lt;p&gt;A symmetry is anomalous if it is respected by the Lagrangian but not by the path integral measure. For a symmetry $H$ with generators $t^a$ and a gauge symmetry $G$ with generators $T^a$, we say that $H$ suffers a $G$-anomaly if the &lt;em&gt;anomaly coefficient&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;$$ \mathrm{tr}(\gamma^5 t^a \{T^b, T^c\}) $$&lt;/p&gt;
+&lt;p&gt;is non-zero. In principle it is possible for anomalies to arise from diagrams with two different gauge currents (three different currents in total), but this doesn&amp;rsquo;t happen in the Standard Model since such diagrams always involve exactly one $SU(n)$ generator (either $SU(2)_L$ or $SU(3)_C$), which is traceless in any representation. It is a somewhat magical feature of the Standard Model, which one should check from the table of field representations above, that no gauge symmetry $H$ suffers a $G$-anomaly for any gauge symmetry $G$. This is necessary for the theory to be consistent. Nevertheless, there are several global symmetries $H$ which suffer $G$-anomalies.&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -31,69 +122,25 @@
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;Electroweak&lt;/td&gt;
-&lt;td&gt;Yes&lt;/td&gt;
+&lt;td&gt;QCD&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;QCD&lt;/td&gt;
+&lt;td&gt;Electroweak&lt;/td&gt;
+&lt;td&gt;Down to $U(1)_Q$&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;QED&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;td&gt;No&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Symmetries of the Standard Model II: The Quark Sector</title>
-      <link>/blog/sm2/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>/blog/sm2/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This section concerns the global continuous symmetries of the quark sector, viewed from the perspective of the low-energy theory with gauge group $SU(3) \times U(1)_Q$.&lt;/p&gt;
-&lt;h2 id=&#34;flavour-symmetries&#34;&gt;Flavour Symmetries&lt;/h2&gt;
-&lt;p&gt;With $n_f$ flavours of quark, we can act independently on left- and right- handed quarks with unitary matrices:&lt;/p&gt;
-&lt;h2 id=&#34;exactness&#34;&gt;Exactness&lt;/h2&gt;
-&lt;p&gt;Such a symmetry is exact when the quarks are massless. If the quarks are not massless but have the same mass, the vector symmetry remains exact (or if some of them do, some part of it does). In the case that all the quark masses are different, the only exact symmetry is $U(1)_V$.&lt;/p&gt;
-&lt;h2 id=&#34;spontaneous-symmetry-breaking&#34;&gt;Spontaneous Symmetry Breaking&lt;/h2&gt;
-&lt;p&gt;All axial symmetries are broken by the vacuum.&lt;/p&gt;
-&lt;h2 id=&#34;anomalies&#34;&gt;Anomalies&lt;/h2&gt;
-&lt;p&gt;Axial $U(1)$ suffers a QCD anomaly. All diagonal generators of axial $U(n)$ suffer a QED anomaly.&lt;/p&gt;
-&lt;h2 id=&#34;the-lepton-sector&#34;&gt;The Lepton Sector?&lt;/h2&gt;
-&lt;p&gt;In principle a similar study is warranted of the global continuous symmetries of the lepton sector. However, this is vastly more simple. Firstly, without the strong dynamics of QCD, there is no chiral condensate, so no spontaneous symmetry breaking. Secondly, the lepton masses are sufficiently different that no flavour symmetry can fairly be called approximate (the quark masses evade this problem since they gain large effective masses through chiral symmetry breaking). We note, however, that to the extent that a $U(n)_V \times U(n)_A$ flavour symmetry could be considered approximate, the diagonal generators of the axial symmetries would suffer a QED anomaly, just as in the quark case.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Symmetries of the Standard Model III: The Higgs Sector</title>
-      <link>/blog/sm3/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>/blog/sm3/</guid>
-      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Hello.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Symmetries of the Standard Model IV: Discrete Symmetries and the $\theta$ Terms</title>
-      <link>/blog/sm4/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>/blog/sm4/</guid>
-      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Hello.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Symmetries of the Standard Model V: Summary</title>
-      <link>/blog/sm5/</link>
-      <pubDate>Tue, 14 Sep 2021 00:00:00 +0000</pubDate>
-      <guid>/blog/sm5/</guid>
-      <description>&lt;h2 id=&#34;the-problem&#34;&gt;The Problem&lt;/h2&gt;
-&lt;p&gt;Hello.&lt;/p&gt;
 </description>
     </item>
     

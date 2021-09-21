@@ -19,7 +19,7 @@
       <guid>/blog/sm1/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The Standard Model is a complicated quantum field theory. Understanding it in detail takes time, but understanding the symmetries of the theory provides a framework with which to understand these details.&lt;/p&gt;
-&lt;p&gt;Symmetries can be classified along many lines. They can be continuous or discrete, global or local, approximate or exact, anomalous, spontaneously broken, and so on. In this series, we will endeavour to discuss each and every symmetry of the Standard Model, and categorise them according to each of the criteria above.&lt;/p&gt;
+&lt;p&gt;Symmetries can be classified along many lines. They can be continuous or discrete, global or local, approximate or exact, anomalous, spontaneously broken, and so on. In this series, we will endeavour to discuss each and every symmetry of the Standard Model, and classify them according to each of the categories above.&lt;/p&gt;
 &lt;p&gt;In Part I, we will give a schematic overview of the structure of the Standard Model and its gauge symmetries. In Parts II and III we will consider global continuous symmetries, first from the perspective of the low-energy theory, and then from the perspective of the high-energy theory. In Part IV we will consider the discrete symmetries $C$, $P$, and $T$, and in Part V we will collect these results together and discuss how they are affected by some extensions to the theory.&lt;/p&gt;
 &lt;h2 id=&#34;gauge-symmetries&#34;&gt;Gauge Symmetries&lt;/h2&gt;
 &lt;p&gt;The starting point for the construction of the Standard Model is the gauge group&lt;/p&gt;
@@ -95,12 +95,13 @@
 &lt;p&gt;$$ \mathcal{L}_\theta =  \frac{\theta g^2}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma} F^a_{\mu \nu} F^a_{\rho \sigma} \ . $$&lt;/p&gt;
 &lt;p&gt;We will ignore these terms until Part IV.&lt;/p&gt;
 &lt;h2 id=&#34;exact-symmetries&#34;&gt;Exact Symmetries&lt;/h2&gt;
-&lt;p&gt;The Lagrangian above has many approximate global symmetries which we will discuss in due course. The extent to which these symmetries are approximate is dictated by the various parameters of the theory. However, for general choices of these parameters (and in reality) the Standard Model has only two exact global continuous symmetries. These are &lt;strong&gt;baryon number&lt;/strong&gt; and &lt;strong&gt;lepton number&lt;/strong&gt;. They are not enforced upon the theory &amp;mdash; rather, it is simply not possible to write down renormalizable terms respecting the overall gauge symmetry which violate baryon or lepton number. We sometimes say such symmetries are &lt;strong&gt;accidental&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The Lagrangian above has many approximate global symmetries which we will discuss in due course. The extent to which these symmetries are approximate is dictated by the various parameters of the theory. For general choices of these parameters (and in reality) the Standard Model has only two exact global continuous symmetries. These are &lt;strong&gt;baryon number&lt;/strong&gt; and &lt;strong&gt;lepton number&lt;/strong&gt;. They are not enforced upon the theory &amp;mdash; rather, it is simply not possible to write down renormalizable terms respecting the overall gauge symmetry which violate baryon or lepton number. We sometimes say such symmetries are &lt;strong&gt;accidental&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;spontaneous-symmetry-breaking&#34;&gt;Spontaneous Symmetry Breaking&lt;/h2&gt;
 &lt;p&gt;A symmetry is spontaneously broken if it is respected by the Lagrangian but not by the vacuum of the theory. Spontaneous symmetry breaking is typically caused by fields acquiring a non-zero expectation value in the vacuum. In the Standard Model, there are two sources of spontaneous symmetry breaking.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;The Higgs field $\phi$ acquires a non-zero VEV. This breaks the gauge symmetry $$ SU(3)_C \times SU(2)_L \times U(1)_Y \to SU(3)_C \times U(1)_Q \ .$$
+&lt;p&gt;The Higgs field $\phi$ acquires a non-zero VEV. This breaks the gauge symmetry thus:
+$$ SU(3)_C \times SU(2)_L \times U(1)_Y \to SU(3)_C \times U(1)_Q \ .$$
 It also breaks some approximate global symmetries. This is known as &lt;strong&gt;electroweak symmetry breaking&lt;/strong&gt;. The unbroken $U(1)_Q$ symmetry is the symmetry of &lt;strong&gt;quantum electrodynamics (QED)&lt;/strong&gt;. We will discuss this further in Part III.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;

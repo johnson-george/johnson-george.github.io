@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="Symmetries." />
+  <meta name="description" content="Global symmetries of the low-energy theory, with gauge group $SU(3)_C \times U(1)_Q$ and Dirac mass terms for the fermions." />
 
   
   <link rel="alternate" hreflang="en-us" href="/blog/sm2/" />
@@ -248,7 +248,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.3161f3bfda22d6e096a43893507f9d55.css" />
+  <link rel="stylesheet" href="/css/wowchemy.11d9fa1211a367dc527890270cecfb23.css" />
 
   
 
@@ -295,16 +295,16 @@
   <meta property="og:site_name" content="George Johnson" />
   <meta property="og:url" content="/blog/sm2/" />
   <meta property="og:title" content="Symmetries of the Standard Model II: The Quark Sector | George Johnson" />
-  <meta property="og:description" content="Symmetries." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:description" content="Global symmetries of the low-energy theory, with gauge group $SU(3)_C \times U(1)_Q$ and Dirac mass terms for the fermions." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2021-09-14T00:00:00&#43;00:00"
+        content="2021-09-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-09-14T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-09-22T00:00:00&#43;00:00">
   
 
   
@@ -710,7 +710,7 @@
     
       
     
-    Sep 14, 2021
+    Sep 22, 2021
   </span>
   
 
@@ -749,17 +749,69 @@
 
     <div class="article-style">
       <h2 id="introduction">Introduction</h2>
-<p>This section concerns the global continuous symmetries of the quark sector, viewed from the perspective of the low-energy theory with gauge group $SU(3) \times U(1)_Q$.</p>
+<p>At low energies, the Standard Model has unbroken gauge group $SU(3)_C \times U(1)_Q$. The heavy Higgs and massive gauge bosons can be ignored, leaving a theory with a number of flavours of Dirac fermion. We will discuss the continuous global symmetries of this theory, focusing on the quark sector.</p>
 <h2 id="flavour-symmetries">Flavour Symmetries</h2>
-<p>With $n_f$ flavours of quark, we can act independently on left- and right- handed quarks with unitary matrices:</p>
-<h2 id="exactness">Exactness</h2>
-<p>Such a symmetry is exact when the quarks are massless. If the quarks are not massless but have the same mass, the vector symmetry remains exact (or if some of them do, some part of it does). In the case that all the quark masses are different, the only exact symmetry is $U(1)_V$.</p>
+<p>With $n_f$ flavours of quark, the largest possible global symmetry group consists of independent unitary rotations of the left-handed quarks and the right-handed quarks, $U(n_f)_L \times U(n_f)_R $. Such symmetries are sometimes called <strong>flavour symmetries</strong>. Excluding discrete symmetry quotients, this can be written
+$$ SU(n_f)_L \times SU(n_f)_R \times U(1)_L \times U(1)_R  \ .$$
+It is sometimes useful rewrite left- and right-handed rotations in terms of rotations of both chiralities by the same amount or by opposite amounts. Such symmetries are called <strong>vector symmetries</strong> and <strong>axial symmetries</strong> respectively. Thus we are tempted to write the above symmetry group as
+$$ SU(n_f)_V \times SU(n_f)_A \times U(1)_V \times U(1)_A  \ .$$
+In fact there is a small subtlety here. It is not the case that axial special unitary transformations form a group (they are not closed under composition). More precisely, we should think of $SU(n_f)_A$ as the coset $SU(n_f)_L \times SU(n_f)_R  / SU(n_f)_V$.</p>
+<h2 id="exact-symmetries">Exact Symmetries</h2>
+<p>Such a symmetry is exact when all the quarks are massless. If the quarks are not massless but all have the same mass, the vector symmetry is exact but none of the axial symmetries are. In the case that all the quark masses are different and non-zero, as in reality, the exact symmetry group is $U(1)_V^{n_f}$, corresponding to number conservation of each quark flavour.</p>
+<blockquote>
+<p><em>Exercise</em>: show that if there are $n_0$ massless quarks and $n_i$ quarks of mass $m_i &gt; 0$, where $\sum_i n_i = n_f$, then the exact symmetry group is
+$$  U(n_0)_R \times U(n_0)_L \times \prod_i U(n_i)_V  \ .$$</p>
+</blockquote>
+<p>In the Standard Model, the lighest three quarks (the up, down, and strange) have sufficiently small masses that for $n_f = 3$ we can consider $U(n_f) \times U(n_f)$ to be a good approximate symmetry. It is an even better approximate symmetry for $n_f = 2$.</p>
 <h2 id="spontaneous-symmetry-breaking">Spontaneous Symmetry Breaking</h2>
-<p>All axial symmetries are broken by the vacuum.</p>
+<p>All axial symmetries are broken by the vacuum due to the non-zero VEV of the quark bilinears $\bar{q}q$. Note that the broken gauge symmetry $SU(2)_L \times U(1)_Y$, acting on quarks, is in fact a subgroup of $U(n_f)_L \times U(n_f)_R$, provided we take $n_f = 6$. And indeed, the spontaneous breaking of the axial symmetries translates into the spontaneous breaking of the gauge symmetry down to $U(1)_Q$. One might wonder, therefore, whether the chiral condensate alone could be responsible for this pattern of symmetry breaking. However, this will naturally give the gauge bosons masses of order the QCD scale (around $100\ \mathrm{MeV})$ rather than the observed scale of $100\ \mathrm{GeV}$. Furthermore, the Higgs serves a second purpose in the Standard Model (in addition to breaking electroweak symmetry), which is to provide masses to the quarks and leptons. Without the Higgs, the gauge symmetry can only be exact if all the quarks and leptons are massless, which is not the case.</p>
 <h2 id="anomalies">Anomalies</h2>
-<p>Axial $U(1)$ suffers a QCD anomaly. All diagonal generators of axial $U(n)$ suffer a QED anomaly.</p>
-<h2 id="the-lepton-sector">The Lepton Sector?</h2>
-<p>In principle a similar study is warranted of the global continuous symmetries of the lepton sector. However, this is vastly more simple. Firstly, without the strong dynamics of QCD, there is no chiral condensate, so no spontaneous symmetry breaking. Secondly, the lepton masses are sufficiently different that no flavour symmetry can fairly be called approximate (the quark masses evade this problem since they gain large effective masses through chiral symmetry breaking). We note, however, that to the extent that a $U(n)_V \times U(n)_A$ flavour symmetry could be considered approximate, the diagonal generators of the axial symmetries would suffer a QED anomaly, just as in the quark case.</p>
+<p>As well as being inexact and spontaneously broken by the vacuum, the axial symmetries are also anomalous. In particular, axial $U(1)_A$ suffers both a QCD anomaly and a QED anomaly. There is also exactly one generator of axial $SU(n_f)_A$ which suffers a QED anomaly &mdash; for $n_f = 3$ this is $\sqrt{3}\lambda_8 - \lambda_3$. The aforementioned QCD anomaly is the supposed explanation for the lack of a fourth ($n_f = 2$) or ninth ($n_f = 3$) light meson.</p>
+<p>One might suspect that the QED anomaly suffered by $SU(n_f)_A$ would also raise the masses of some of the other light mesons. This is a rather complicated story which we will briefly discuss in Part IV. For the present time we note that if we neglect electric charge ($e = 0$), the only anomaly occurs in the $U(1)_A$ axial current $J_5$:</p>
+<p>$$ \partial_\mu J_5^\mu = -\frac{n_f g_s^2}{32 \pi^2} \epsilon^{\mu \nu \rho \sigma}F^a_{\mu \nu} F^a_{\rho \sigma} \ .$$</p>
+<h2 id="the-lepton-sector">The Lepton Sector</h2>
+<p>In principle a similar study is warranted of the global continuous symmetries of the lepton sector. However, this is vastly more simple. Firstly, without the strong dynamics of QCD, there is no chiral condensate, so no spontaneous symmetry breaking. Secondly, the lepton masses are sufficiently different that no flavour symmetry can fairly be called approximate (the quarks evade this problem since they gain large effective masses through chiral symmetry breaking). We note, however, that to the extent that any $U(n_f)_V \times U(n_f)_A$ flavour symmetry <em>could</em> be considered approximate, the axial symmetries suffer a QED anomaly as in the quark case.</p>
+<blockquote>
+<p><em>Exercise</em>: Let $D$ be a diagonal generator of $SU(n_f)$, with diagonal elements $d_i$. Let $\vec{e} = (1,1,\ldots,1)$, so that $\vec{d} \cdot \vec{e} = 0$. As we stated in Part I, the anomaly is characterised by the size of $\mathrm{tr}(DQ^2 )$. Show that in general there is one anomalous generator, but that if we consider a flavour symmetry amongst only the charged leptons, or only the neutrinos, then there is no such anomaly.</p>
+</blockquote>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Approximate</th>
+<th>SSB</th>
+<th>Anomalous</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$SU(3)_V$</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>$SU(3)_A$</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>QED ($\sqrt{3}\lambda_8 - \lambda_3$)</td>
+</tr>
+<tr>
+<td>$U(1)_V$</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>$U(1)_A$</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>QCD and QED</td>
+</tr>
+</tbody>
+</table>
+<p>Note that, whilst this section concerns global symmetries, there is in fact a $U(1)$ subgroup of $SU(3)_V$ corresponding to electric charge, which is of course gauged. (Generically it would be a subgroup of $U(3)_V$, but with one up-type and two down-type light quarks, the electromagnetic generator $Q$ is traceless).</p>
 
     </div>
 

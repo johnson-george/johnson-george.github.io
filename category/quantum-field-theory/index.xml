@@ -5,12 +5,95 @@
     <link>/category/quantum-field-theory/</link>
       <atom:link href="/category/quantum-field-theory/index.xml" rel="self" type="application/rss+xml" />
     <description>Quantum Field Theory</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 22 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 24 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
       <title>Quantum Field Theory</title>
       <link>/category/quantum-field-theory/</link>
     </image>
+    
+    <item>
+      <title>Symmetries of the Standard Model III: The Higgs Sector</title>
+      <link>/blog/sm3/</link>
+      <pubDate>Fri, 24 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>/blog/sm3/</guid>
+      <description>&lt;h2 id=&#34;the-higgs-potential&#34;&gt;The Higgs potential&lt;/h2&gt;
+&lt;p&gt;The Higgs Lagrangian&lt;/p&gt;
+&lt;p&gt;$$ \mathcal{L}_\phi = |D_\mu \phi|^2 - \mu^2 \phi^\dagger \phi + \lambda( \phi^\dagger \phi)^2 $$&lt;/p&gt;
+&lt;p&gt;is by construction invariant under the gauge symmetry $SU(2)_L \times U(1)_Y$, where we take $Y = 1/2$ by convention and let $\phi$ transform in the fundamental of $SU(2)_L$. However, the Higgs potential is in fact invariant under a larger symmetry group. This is easiest to see by writing $\phi$ in terms of real and imaginary parts:&lt;/p&gt;
+&lt;p&gt;$$ \phi = \begin{pmatrix} \phi_1 + i \phi_2 \\ \phi_0 + i \phi_3 \end{pmatrix} $$
+so that
+$$ \phi^\dagger \phi = \sum_i \phi_i^2  \ .$$
+Then there is an obvious $O(4)$ symmetry. Ignoring discrete quotients, we have $O(4) = SU(2) \times SU(2)$. To see this decomposition explicitly in the case of the Higgs field, we can construct the matrix
+$$ \Phi = \begin{pmatrix} \phi_0 + i \phi_3 &amp;amp;  \phi_2 + i \phi_1 \\ - \phi_2 + i \phi_1 &amp;amp; \phi_0 - i \phi_3 \end{pmatrix} = \phi_0 I + i \sum_i \phi_i \sigma_i \ . $$
+Note that $\Phi = |\phi| U$ where $U$ is a special unitary matrix. Then we have
+$$ \phi^\dagger \phi = \frac{1}{2}\mathrm{tr}(\Phi^\dagger \Phi)$$
+and this bilinear form is invariant under the transformation
+$$ \Phi \to U_L \Phi U_R^\dagger \ ,$$
+where $U_{L,R} \in SU(2)$  (one can check that if $U_{L,R}$ are allowed to lie in $U(2)$ instead, they do not generally preserve the form of $\Phi$ as a real multiple of a special unitary matrix). The reader can check that the action of $U_L$ on $\Phi$ corresponds precisely to the action of $SU(2)_L$ on the original spinor $\phi$.&lt;/p&gt;
+&lt;p&gt;When the Higgs acquires a vacuum expectation value so that $\Phi = vI/\sqrt{2}$, this symmetry group is spontaneously broken down to the diagonal subgroup, with $U_L = U_R$. This symmetry is known as &lt;strong&gt;custodial symmetry&lt;/strong&gt;, $SU(2)_V$.&lt;/p&gt;
+&lt;h2 id=&#34;the-yukawa-terms&#34;&gt;The Yukawa Terms&lt;/h2&gt;
+&lt;p&gt;Consider first a single generation of quarks. The Yukawa terms are
+$$ \mathcal{L}_y = -y_d \bar{Q}_L \phi d_R - y_u \epsilon^{ab}\bar{Q}_{La} \phi_b u_R  +\mathrm{h.c.}  $$
+By construction this Lagrangian is invariant under $SU(2)_L$, but does not appear to be invariant under $SU(2)_R$. However, in the case that $y_u = y_d = y$, one can write&lt;/p&gt;
+&lt;p&gt;$$ \mathcal{L}_y = -y \bar{Q}_L \Phi Q_R + \mathrm{h.c.} $$&lt;/p&gt;
+&lt;p&gt;and hence $SU(2)_R$ is in fact a symmetry of the Yukawa terms. With multiple generations, the complex numbers $y_u,y_d$ become complex matrices, which we will denote $Y_u,Y_d$. As above, we will have an $SU(2)_R$ symmetry if $Y_u = Y_d$. However, since we can freely rotate the right-handed down-type quarks amongst themselves without disturbing any other term in the Lagrangian, and likewise for the right-handed up-type quarks, this requirement is a little too strict. In fact, $SU(2)_R$ will be a symmetry provided $Y_u$ and $Y_d$ are related by right-multiplication by a unitary matrix. In the case of a single generation, this just requires $|y_u| = |y_d|$.&lt;/p&gt;
+&lt;p&gt;Note that any square matrix $Y$ can be written as the product $HU$ where $H$ is Hermitian and positive semi-definite and $U$ is unitary. This is known as polar decomposition, and $H$ is uniquely determined irrespective of the invertibility of $Y$. We can hence use the freedom to rotate the right-handed quarks to ensure, without loss of generality, that $Y_u$ and $Y_d$ are Hermitian and positive semi-definite. With this convention, $SU(2)_R$ is a symmetry iff $Y_u = Y_d$.&lt;/p&gt;
+&lt;p&gt;After spontaneous symmetry breaking, this same condition $Y_u = Y_d$ is required for custodial $SU(2)_V$ to be exact.&lt;/p&gt;
+&lt;h2 id=&#34;kinetic-terms-and-hypercharge&#34;&gt;Kinetic Terms and Hypercharge&lt;/h2&gt;
+&lt;p&gt;If $SU(2)_L \times SU(2)_R$ is truly the maximum symmetry of the Higgs potential, and the first factor is the familiar gauged $SU(2)_L$ group, then hypercharge must be a subgroup of the second factor. Indeed, it is not too difficult to show that hypercharge acts on the Higgs as the $T^3_R$ generator. However, this is not true considered from the perspective of the quarks and leptons. In fact, the generator of hypercharge can be written
+$$ Y = T^3_R + B/2 - L/2 \ ,$$
+where $B$ and $L$ are the generators of baryon number and lepton number respectively. Since we have not gauged the entire $SU(2)_R$ symmetry group, but only some subgroup of it, $SU(2)_R$ is not an exact symmetry of the theory  (unless we set $g&#39; = 0$). To see this explicitly from the Lagrangian, we must consider the Higgs kinetic terms.&lt;/p&gt;
+&lt;p&gt;Without gauge couplings, the kinetic terms of the Higgs are invariant under the full $SU(2)_L \times SU(2)_R$ symmetry group. When we gauge the $SU(2)_L$ subgroup, the additional terms in the Lagrangian are only invariant as a result of the global transformation properties of the gauge fields:
+$$ A_\mu \to g A_\mu g^{-1} \ .$$
+Thus, the problematic terms are those that involve the hypercharge gauge field $B_\mu$ (proportional to the matrix $T^3$), which does not transform under the action of the generators $T_R^1$ or $T_R^2$, nor commute with them:
+$$ \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \mathrm{tr}(B^\mu (1 - \alpha_iT_R^i)  \Phi^\dagger \Phi (1 + \alpha_j T_R^j) B_\mu)  \neq \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \ .$$&lt;/p&gt;
+&lt;p&gt;We note that, whilst the Yukawa terms and the coupling to hypercharge gauge bosons both break the full $SU(2)_L \times SU(2)_R$ symmetry, they leave intact both $SU(2)_L$ and the $T^3$ generator of $SU(2)_R$.&lt;/p&gt;
+&lt;h2 id=&#34;fermion-symmetries-and-anomalies&#34;&gt;Fermion Symmetries and Anomalies&lt;/h2&gt;
+&lt;p&gt;Having considered the Higgs sector in some detail, we should ask whether there are any additional symmetries that act only on the fermions. If the Yukawa matrices are general (as they are in reality), the only such symmetries are $U(1)$ symmetries that act equally on each flavour. Indeed, one can check that the only such symmetries are the vectorial symmetries $U(1)_B$ and $U(1)_L$.&lt;/p&gt;
+&lt;p&gt;As a matter of fact, both of these symmetries suffer an electroweak anomaly:
+$$ \partial_\mu J_B^\mu = \partial_\mu J_L^\mu = \frac{n_g}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma}\left( g^2 W^a_{\mu \nu} W^a_{\rho \sigma} - {g&#39;}^2 B_{\mu \nu} B_{\rho \sigma}  \right) \ .$$&lt;/p&gt;
+&lt;p&gt;Since the divergences of the baryon number current and lepton number current are identical, we see that the combination of global symmetries $B - L$ is non-anomalous, and indeed the only such exact global continuous symmetry in the Standard Model.&lt;/p&gt;
+&lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Approximate&lt;/th&gt;
+&lt;th&gt;SSB&lt;/th&gt;
+&lt;th&gt;Anomalous&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$SU(2)_L \times SU(2)_R$&lt;/td&gt;
+&lt;td&gt;$T_R^1$ and $T_R^2$&lt;/td&gt;
+&lt;td&gt;Down to $SU(2)_V$&lt;/td&gt;
+&lt;td&gt;No?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$SU(2)_V$&lt;/td&gt;
+&lt;td&gt;$T^1$ and $T^2$&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No?&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$U(1)_{B+L}$&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Electroweak&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$U(1)_{B-L}$&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that $SU(2)_L$ here is gauged, as is the hypercharge subgroup of $SU(2)_R \times U(1)_{B-L}$.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Symmetries of the Standard Model II: The Quark Sector</title>

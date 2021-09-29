@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="Global symmetries of the high-energy theory, including the Higgs field, electroweak gauge bosons, and the Yukawa terms." />
+  <meta name="description" content="Global symmetries of the high-energy theory, including the Higgs field, the electroweak gauge bosons, and the Yukawa terms." />
 
   
   <link rel="alternate" hreflang="en-us" href="/blog/sm3/" />
@@ -295,7 +295,7 @@
   <meta property="og:site_name" content="George Johnson" />
   <meta property="og:url" content="/blog/sm3/" />
   <meta property="og:title" content="Symmetries of the Standard Model III: The Higgs Sector | George Johnson" />
-  <meta property="og:description" content="Global symmetries of the high-energy theory, including the Higgs field, electroweak gauge bosons, and the Yukawa terms." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:description" content="Global symmetries of the high-energy theory, including the Higgs field, the electroweak gauge bosons, and the Yukawa terms." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -784,13 +784,14 @@ where $B$ and $L$ are the generators of baryon number and lepton number respecti
 <p>Without gauge couplings, the kinetic terms of the Higgs are invariant under the full $SU(2)_L \times SU(2)_R$ symmetry group, just as the potential is. When we gauge the $SU(2)_L$ subgroup, the additional terms in the Lagrangian (coupling the Higgs to the gauge fields) are only invariant as a result of the global transformation properties of the gauge fields:
 $$ W_\mu \to U W_\mu U^{-1} \ .$$
 Thus, the problematic terms are those that involve the hypercharge gauge field $B_\mu$ (proportional to the matrix $T_R^3$), which does not transform under the action of the generators $T_R^1$ or $T_R^2$, nor commute with them:
-$$ \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \mathrm{tr}(B^\mu (1 - i\alpha_iT_R^i)  \Phi^\dagger \Phi (1 + i\alpha_j T_R^j) B_\mu)  \neq \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \ .$$</p>
+$$ \begin{align} \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \ &amp;\mathrm{tr}(B^\mu (1 - i\alpha_iT_R^i)  \Phi^\dagger \Phi (1 + i\alpha_j T_R^j) B_\mu) \\<br>
+\neq \ &amp;\mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \ . \end{align}$$</p>
 <blockquote>
 <p><em>Exercise:</em> Show that the kinetic terms for the fermions also break $SU(2)_R$ explicitly when $g' \neq 0$.</p>
 </blockquote>
 <p>To summarise: both the Yukawa terms and the coupling to the hypercharge gauge boson explicitly break the full $SU(2)_L \times SU(2)_R$ symmetry, but they leave intact both $SU(2)_L$ and the $T^3_R$ generator of $SU(2)_R$.</p>
 <h2 id="fermion-symmetries-and-anomalies">Fermion Symmetries and Anomalies</h2>
-<p>Having considered the Higgs sector in some detail, we should ask whether there are any additional symmetries that act only on the fermions. If the Yukawa matrices are general (as they are in reality), the only possible symmetries are $U(1)$ rephasings of fermion flavours and chiralities. In fact, as we will justify more fully in Part IV, the only such exact symmetries are the vectorial and flavour-blind symmetries $U(1)_B$ and $U(1)_L$.</p>
+<p>Having considered the Higgs sector in some detail, we should ask whether there are any additional symmetries that act only on the fermions. If the Yukawa matrices are general (as they are in reality), the only possible symmetries are $U(1)$ rephasings of fermion flavours and chiralities. In fact, as we will justify more fully in Part IV, the only such symmetries are the vectorial and flavour-blind symmetries $U(1)_B$ and $U(1)_L$.</p>
 <p>Though exact, both of these symmetries suffer an electroweak anomaly:
 $$ \partial_\mu J_B^\mu = \partial_\mu J_L^\mu = \frac{n_g}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma}\left( g^2 W^a_{\mu \nu} W^a_{\rho \sigma} - {g'}^2 B_{\mu \nu} B_{\rho \sigma}  \right) \ .$$</p>
 <p>Since the divergences of the baryon number current and lepton number current are identical, we see that the combination of global symmetries $B - L$ is non-anomalous, and indeed is the only such exact global continuous symmetry in the Standard Model.</p>

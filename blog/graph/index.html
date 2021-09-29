@@ -752,7 +752,7 @@
 <p>It is well known that one cannot connect each of three homes to each of three utilities, without any of the lines of connection crossing, if those lines are restricted to lie in a plane (or equivalently, on the surface of a sphere). Mathematically, we say that the complete bipartite graph $K_{3,3}$ is not planar.</p>
 <p>However, it <em>is</em> possible to draw such a graph on the surface of a torus. Indeed, on a torus it is possible to connect each of four homes to each of four utilities, without any lines of connection crossing (an exercise for the curious).</p>
 <p>A natural question to ask is: what is the surface of lowest genus $g$ on which it is possible to connect $n$ homes to $n$ utilities, without crossings?</p>
-<h2 id="a-bound">A Bound</h2>
+<h2 id="a-lower-bound">A Lower Bound</h2>
 <p>Here is a lower bound on the genus required. Suppose the complete bipartite graph $K_{n,n}$ can be drawn without crossings on the genus-$g$ surface. Let $e = n^2$ denote the number of edges in the graph, $f$ the number of faces, and let $\chi = 2 - 2g$ denote the Euler characteristic of the surface.</p>
 <p>The shortest cycle in $K_{n,n}$ has length four. Thus each face of the graph must have at least four sides, and since each side is shared by two faces, we must have</p>
 <p>$$ 2 e \geq 4 f  \ .$$</p>
@@ -760,7 +760,29 @@
 <p>$$ \frac{e}{2} \leq 2n - \chi = 2(n + g - 1) \ .$$</p>
 <p>Thus we find that</p>
 <p>$$ g \geq \frac{(n-2)^2}{4} \ . $$</p>
-<p>We hence find (for example) that for $n=3,4$ we must have $g \geq 1$, whilst for $n = 5$ we must have $g \geq 3$.</p>
+<h2 id="an-upper-bound">An Upper Bound</h2>
+<p>Note that any finite graph can be drawn without crossings on a surface with sufficiently large genus. Roughly speaking, we can simply send each edge through its own handle, and so $g \leq e(G)$ gives a simple upper bound on the genus required.</p>
+<p>To improve this bound, first consider the case that $n = 2m$ is even. By considering the houses in pairs, and likewise for the utilities, our task is to connect each house pair to each utility pair with a copy of $K_{2,2}$, of which there will be $m^2$ in total. Note that we can represent a $K_{2,2}$ passing through a handle like so:</p>
+<img src="pics/k22.png" width="400">
+<p>Thus we can clearly draw our graph with $m^2$ handles like so ($m = 2$):</p>
+<img src="pics/simple.png" width="400">
+<p>Here black dots indicate houses and white dots indicate utilities. This gives a simple upper bound (for $n$ odd or even) on the genus of</p>
+<p>$$g \leq \lceil n/2 \rceil^2 \ .$$</p>
+<h2 id="a-better-upper-bound">A Better Upper Bound</h2>
+<p>Let us pair the houses and utilities as before. We can easily draw $m$ copies of $K_{2,2}$ on the plane like so ($m=3$):</p>
+<img src="pics/bound1.png" width="400">
+<p>Indeed, we can add $m-1$ further copies of $K_{2,2}$ without difficulty:</p>
+<img src="pics/bound2.png" width="400">
+<p>We now claim that we can add the remaining $(m-1)^2$ copies of $K_{2,2}$ using $(m-1)^2$ handles:</p>
+<img src="pics/bound3.png" width="400">
+<p>Our minimum required genus is hence bounded above by $g \leq (m-1)^2 = (n-2)^2/4$. But this is precisely the lower bound on the genus we previously found!</p>
+<p>For $n$ odd I have not found so neat a solution. It seems clear that the genus required should be smaller than that for $K_{n+1,n+1}$, yet it may not be possible to achieve the lower bound described above (for one thing, it is impossible for every face to have four sides, since the number of edges is odd). More thought is required.</p>
+<h2 id="a-partial-solution">A Partial Solution</h2>
+<p>We have found that when $n$ is even, the minimum genus required to draw $K_{n,n}$ without crossings is
+$$ g = \frac{(n-2)^2}{4} \ . $$
+Whilst for $n$ odd, we have found that this minimum genus lies in the range
+$$ (n/2 - 1)^2 \leq g \leq (\lceil n/2 \rceil - 1)^2 \ .$$</p>
+<p>Besides pinning down the case of odd $n$ precisely, a natural next question to ask is how this result extends to the graphs $K_{m,n}$ for $m \neq n$.</p>
 
     </div>
 

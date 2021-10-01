@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Lecturer in Applied Mathematics" />
+  <meta name="description" content="Given a finite sequence of real numbers, how can one find the longest strictly increasing subsequence?" />
 
   
-  <link rel="alternate" hreflang="en-us" href="/categories/" />
+  <link rel="alternate" hreflang="en-us" href="/blog/subsequence/" />
 
   
 
@@ -268,8 +268,6 @@
   
 
   
-    <link rel="alternate" href="/categories/index.xml" type="application/rss+xml" title="George Johnson" />
-  
 
   
     <link rel="manifest" href="/index.webmanifest" />
@@ -278,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="/categories/" />
+  <link rel="canonical" href="/blog/subsequence/" />
 
   
   
@@ -295,14 +293,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="George Johnson" />
-  <meta property="og:url" content="/categories/" />
-  <meta property="og:title" content="Categories | George Johnson" />
-  <meta property="og:description" content="Lecturer in Applied Mathematics" /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:url" content="/blog/subsequence/" />
+  <meta property="og:title" content="Longest Increasing Subsequence | George Johnson" />
+  <meta property="og:description" content="Given a finite sequence of real numbers, how can one find the longest strictly increasing subsequence?" /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2021-10-01T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2021-04-28T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2021-04-28T00:00:00&#43;00:00">
   
 
   
@@ -313,15 +315,17 @@
 
   
 
+  
 
 
 
 
-  <title>Categories | George Johnson</title>
+
+  <title>Longest Increasing Subsequence | George Johnson</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="012202020b32a95cd2c8302cdb2f49cd" >
 
   
   
@@ -656,75 +660,304 @@
   </div>
 
   <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Longest Increasing Subsequence</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      George Johnson</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Apr 28, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/algorithms/">Algorithms</a></span>
+  
+
+</div>
+
     
 
 
 
 
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Categories</h1>
-
-  
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/graph-theory/" >Graph Theory</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/quantum-field-theory/" >Quantum Field Theory</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/category/algorithms/" >Algorithms</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
+    <div class="article-style">
+      <h2 id="the-problem">The Problem</h2>
+<p>Given a finite sequence $(a_1, a_2, \ldots, a_k)$ of real numbers, how can one find the longest subsequence satisfying $a_{n(i+1)} &gt; a_{n(i)}$ for all $i$? A sequence of length $k$ has $2^k$ subsequences and checking each case may not be feasible.</p>
+<h2 id="a-solution">A Solution</h2>
+<p>Suppose our sequence begins $(1,10,11,12,2,3,\ldots)$. If we begin our subsequence with $a_1 = 1$, we are left with the decision whether to next take $a_2 = 10$, thus committing to the exclusion of $a_5$ and $a_6$, or whether perhaps to skip the second to fourth elements in the hope of finding more elements less than $a_2$ further down the line. Which decision is better could depend on elements all the way to the end of the sequence.</p>
+<p>Thus, one is tempted to start thinking from the other end. Suppose we begin with $a_k$. Clearly there is nowhere else to go, and our longest subsequence will have length one. Now suppose we begin with $a_{k-1}$. We have hardly more choice in this case: we include $a_k$ if it is greater than $a_{k-1}$, and not otherwise.</p>
+<p>Now suppose we begin with $a_{k-2}$. We have already determined the longest subsequence beginning with $a_i$ for each $i &gt; k-2$. Thus, we need only check which such $a_i$ satisfy $a_i &gt; a_{k-2}$, and of those, prepend $a_{k-2}$ to the longest corresponding subsequence. This will generate the longest subsequence beginning with $a_{k-2}$.</p>
+<p>It&rsquo;s clear we can continue this process, tracking backwards through the sequence to determine the longest ascending subsequence beginning with each element, and once this is complete we can choose the longest among them as our solution.</p>
+<h2 id="an-implementation">An Implementation</h2>
+<p>One way to implement this idea uses Python dictionaries:</p>
+<pre><code class="language-python">a = [1,10,11,12,2,3,4,13,14,15,5,6,7,8]
+k = len(a)
 
-  
+# prepend a small number a_0 so that the longest subsequence necessarily begins with a_0
+a = [min(a)-1] + a
+# create a dictionary of the longest subsequences starting from a_i
+longsubseq = {k : [a[-1]]}
 
+for i in reversed(range(k)):
+    # restrict the dictionary to those j with a_j &gt; a_i
+    lss = {j: longsubseq[j] for j in range(i, k+1) if a[j] &gt; a[i]}
+    # from these choose m such that a_m begins the longest subsequence
+    m = max(lss, key = lambda j: len(lss[j]), default = 0)
+    # append this subsequence to a_i
+    if m == 0: subseq = [a[i]]
+    else: subseq = [a[i]] + longsubseq[m]
+    longsubseq[i] = subseq
+
+solution = longsubseq[0][1:] 
+</code></pre>
+<p>I don&rsquo;t know that Python dictionaries are necessarily the fastest way to implement this idea, but they are conceptually clean at least.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu613f47e83fcc2c23947176e8611d720b_531182_270x270_fill_q75_lanczos_center.jpg" alt="George Johnson">
+    
+
+    <div class="media-body">
+      <h5 class="card-title">George Johnson</h5>
+      <h6 class="card-subtitle">Lecturer in Applied Mathematics</h6>
+      <p class="card-text">My research interests include theoretical aspects of black holes and their connections with cosmology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/johnson-george" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://physics.stackexchange.com/users/30217/gj255" target="_blank" rel="noopener">
+        <i class="fab fa-stack-exchange"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://inspirehep.net/" target="_blank" rel="noopener">
+        <i class="ai ai-inspire"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

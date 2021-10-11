@@ -5,7 +5,7 @@
     <link>/tag/exams/</link>
       <atom:link href="/tag/exams/index.xml" rel="self" type="application/rss+xml" />
     <description>Exams</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 11 May 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 11 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
       <title>Exams</title>
@@ -13,10 +13,20 @@
     </image>
     
     <item>
+      <title>Geometry and Calculus Practice Paper</title>
+      <link>/note/maths_collection/</link>
+      <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>/note/maths_collection/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/notes/geom_calc_collection_jan_2021.pdf&#34; target=&#34;_blank&#34;&gt;Geometry and Calculus Paper.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I taught applied mathematics to first year undergraduates at Oxford during the 2020-2021 academic year. The focus of the first term was geometry and calculus, and I wrote a practice paper for the students to sit in January that covered this material. My aim was to set problems that involved little in the way of bookwork, and which required the application of the ideas of the course to unfamiliar scenarios.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>General Relativity Practice Paper</title>
-      <link>/note/collection/</link>
+      <link>/note/gr_collection/</link>
       <pubDate>Tue, 11 May 2021 00:00:00 +0000</pubDate>
-      <guid>/note/collection/</guid>
+      <guid>/note/gr_collection/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;/notes/b5_collection_may_2021.pdf&#34; target=&#34;_blank&#34;&gt;General Relativity Paper.&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I taught General Relativity to third year undergraduate students at Oxford for six years. During this period I wrote a practice paper that the students would usually sit in late April. I hope it provides good practice at a range of problems.&lt;/p&gt;
 </description>

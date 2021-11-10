@@ -26,7 +26,9 @@
 &lt;p&gt;Here $m$ is a matrix in flavour space. Such a term exists only for the right-handed neutrinos since they are the only fields in the theory which transform as singlets under each factor of the gauge group.&lt;/p&gt;
 &lt;p&gt;The Majorana mass term violates lepton number (and also breaks explicitly the $T^3_R$ subgroup of $SU(2)_R$). Thus, with the inclusion of this term the theory possesses no non-anomalous exact global symmetries ($B-L$ being the only such symmetry previously). The only exact anomalous symmetry of our new Lagrangian is baryon number.&lt;/p&gt;
 &lt;p&gt;The diagonalisation of the mass terms is slightly more complicated in this case, though it is straightforward to sketch the effect on the discrete symmetries. We note that $\mathcal{L}_m$ above is not invariant under neutrino rephasings, unlike the diagonalised Yukawa mass terms. Thus, after diagonalisation, the mass terms possess only a $U(1)^3$ flavour symmetry (corresponding to charged lepton rephasings), and this allows us to remove only three phases from the PMNS matrix. There are thus three $CP$-violating phases in the lepton sector in this case.&lt;/p&gt;
-&lt;h2 id=&#34;other-extensions&#34;&gt;Other Extensions&lt;/h2&gt;
+&lt;h2 id=&#34;axions&#34;&gt;Axions&lt;/h2&gt;
+&lt;p&gt;Coming soon.&lt;/p&gt;
+&lt;h2 id=&#34;two-higgs-doublets&#34;&gt;Two Higgs Doublets&lt;/h2&gt;
 &lt;p&gt;Coming soon.&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Here are the summary tables from the previous parts of the series.&lt;/p&gt;
@@ -156,7 +158,7 @@
 &lt;p&gt;The action of $CP$ on the Yukawa terms is a symmetry if $Y_u$ and $Y_d$ are real matrices. Generically they will not be. However, in unitarity gauge we can independently rotate (vectorially) the up-type and down-type quarks to diagonalise the Yukawa matrices: take
 $u_{L,R} \to U_u u_{L,R}$ and $d_{L,R} \to U_d d_{L,R}$ so that
 $$ U_u^\dagger Y_u U_u = D_u \quad \mathrm{and} \quad U_d^\dagger Y_d U_d = D_d  \ . $$
-The eigenvalues of these matrices are the (real and non-negative) masses of the quarks. After such a rotation, the Yukawa terms become real and hence $CP$-symmetric. If all six quark masses are different, the Yukawa terms additionally enjoy a $U(1)^6$ flavour symmetry.&lt;/p&gt;
+The eigenvalues of these matrices are the (real and non-negative) masses of the quarks. After such a rotation, the Yukawa terms become real and hence $CP$-symmetric, and additionally enjoy a $U(1)^6$ flavour symmetry (at the least).&lt;/p&gt;
 &lt;p&gt;This field redefinition disturbs only one other term in the Lagrangian, which is the coupling of the weak charged current to the charged $W^\pm$ bosons. In particular:
 $$ \bar{u}_L \gamma^\mu d_L \to \bar{u}_L U _u^\dagger U_d \gamma^\mu d_L  \ . $$
 The matrix $V = U_u^\dagger U_d$ is known as the CKM matrix. A general unitary matrix has $n_g^2$ real parameters, of which $n_g(n_g+1)/2$ are complex phases. We can use the aforementioned freedom to rephase our quarks without disturbing the Yukawa terms to reduce the number of parameters in this matrix: $V \to U^\dagger V$ or $V \to V U$ where $U = \mathrm{diag}(e^{i \alpha}, e^{i \beta}, e^{i \gamma})$. Note that the $U(1)_B$ subgroup of $U(1)^6$ has trivial action on $V$. We can thus reduce the nine parameters in $V$ down to four (not three), of which one must be a complex phase, known as the CKM phase. All four parameterers are non-zero in the Standard Model. The CKM phase violates $CP$. The other three real parameters characterise the size of the mixing between quark flavours. Since these are all non-zero, there are no global flavour symmetries in the quark sector besides the flavour-blind $U(1)_B$, as we alluded to in Part III.&lt;/p&gt;
@@ -260,7 +262,7 @@ $$ Y = T^3_R + B/2 - L/2 \ ,$$
 where $B$ and $L$ are the generators of baryon number and lepton number respectively. Since only some subgroup of $SU(2)_R$ is gauged, and not the entirety of it, $SU(2)_R$ is not an exact symmetry of the theory (unless we set $g&#39; = 0$). To see this explicitly from the Lagrangian, we can consider the Higgs kinetic terms.&lt;/p&gt;
 &lt;p&gt;Without gauge couplings, the kinetic terms of the Higgs are invariant under the full $SU(2)_L \times SU(2)_R$ symmetry group, just as the potential is. When we gauge the $SU(2)_L$ subgroup, the additional terms in the Lagrangian (coupling the Higgs to the gauge fields) are only invariant as a result of the global transformation properties of the gauge fields:
 $$ W_\mu \to U W_\mu U^{-1} \ .$$
-Thus, the problematic terms are those that involve the hypercharge gauge field $B_\mu$ (proportional to the matrix $T_R^3$), which does not transform under the action of the generators $T_R^1$ or $T_R^2$, nor commute with them:
+Thus, the problematic terms are those that involve the hypercharge gauge field $B_\mu$ (proportional to the matrix $T_R^3$), which does not transform under the action of the generators $T_R^1$ and $T_R^2$, nor commute with them:
 $$ \begin{align} \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \ &amp;amp;\mathrm{tr}(B^\mu (1 - i\alpha_iT_R^i)  \Phi^\dagger \Phi (1 + i\alpha_j T_R^j) B_\mu) \\&lt;br&gt;
 \neq \ &amp;amp;\mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \ . \end{align}$$&lt;/p&gt;
 &lt;blockquote&gt;

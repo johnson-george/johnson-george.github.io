@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topology | George Johnson</title>
+    <link>/category/topology/</link>
+      <atom:link href="/category/topology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Topology</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
+      <title>Topology</title>
+      <link>/category/topology/</link>
+    </image>
+    
+    <item>
+      <title>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem.</title>
+      <link>/blog/polyhedron/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>/blog/polyhedron/</guid>
+      <description>&lt;h2 id=&#34;eulers-polyhedron-formula&#34;&gt;Euler&amp;rsquo;s Polyhedron Formula&lt;/h2&gt;
+&lt;p&gt;There is a wonderful theorem due to Euler (1752) which states that for a convex polyhedron with $V$ vertices, $E$ edges and $F$ faces,&lt;/p&gt;
+&lt;p&gt;$$ V + F - E = 2 \ . $$&lt;/p&gt;
+&lt;p&gt;Here is one proof of this result.&lt;/p&gt;
+&lt;h2 id=&#34;the-angle-defect-formula&#34;&gt;The Angle Defect Formula&lt;/h2&gt;
+&lt;p&gt;For a triangle drawn on the plane, the sum of the interior angles is $\pi$. For a triangle drawn on the surface of a unit sphere, whose sides are arcs of great circles, the internal angles $\alpha,\beta,\gamma$ satisfy&lt;/p&gt;
+&lt;p&gt;$$ \alpha + \beta + \gamma - \pi = text{area \ of \ triangle} \ . $$&lt;/p&gt;
+&lt;p&gt;To prove this, consider extending the sides of the triangle into three great circles. These divide the sphere into eight regions. By the symmetry of the figure under the exchange of antipodal points, our triangle and the three faces which neighbour it constitute exactly half the area of the sphere. The total area of these four regions is hence $2 \pi$.&lt;/p&gt;
+&lt;p&gt;Now our triangle together with any one of the neighbouring regions form the surface of a spherical wedge. A wedge of angle $\theta$ has surface area $2 \theta$ (this gives an area $4 \pi$ when $\theta = 2 \pi$). If we consider the three possible wedges, their total area hence sums to&lt;/p&gt;
+&lt;p&gt;$$ 2(\alpha + \beta + \gamma) \ . $$&lt;/p&gt;
+&lt;h2 id=&#34;back-to-euler&#34;&gt;Back to Euler&lt;/h2&gt;
+&lt;p&gt;dfsd&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

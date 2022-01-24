@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/polyhedron/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/geometry/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2021-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/category/topology/</loc>
+    <lastmod>2021-01-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/tag/exams/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/note/maths_collection/</loc>
-    <lastmod>2021-10-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/note/</loc>
@@ -17,16 +32,10 @@
     <loc>/tags/</loc>
     <lastmod>2021-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-10-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/blog/partition/</loc>
     <lastmod>2021-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/category/graph-theory/</loc>
-    <lastmod>2021-10-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/blog/</loc>
     <lastmod>2021-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/category/quantum-field-theory/</loc>

@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Lecturer in Applied Mathematics" />
+  <meta name="description" content="A beautiful theorem relating the average curvature of some surface to its topology, via properties of polyhedra with that topology." />
 
   
-  <link rel="alternate" hreflang="en-us" href="/404.html" />
+  <link rel="alternate" hreflang="en-us" href="/blog/polyhedron/" />
 
   
 
@@ -276,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_32x32_fill_lanczos_center_2.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_180x180_fill_lanczos_center_2.png" />
 
-  <link rel="canonical" href="/404.html" />
+  <link rel="canonical" href="/blog/polyhedron/" />
 
   
   
@@ -293,12 +293,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="George Johnson" />
-  <meta property="og:url" content="/404.html" />
-  <meta property="og:title" content="404 Page not found | George Johnson" />
-  <meta property="og:description" content="Lecturer in Applied Mathematics" /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:url" content="/blog/polyhedron/" />
+  <meta property="og:title" content="Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem. | George Johnson" />
+  <meta property="og:description" content="A beautiful theorem relating the average curvature of some surface to its topology, via properties of polyhedra with that topology." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
+      <meta
+        property="article:published_time"
+        content="2022-01-24T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-01-24T00:00:00&#43;00:00">
   
 
   
@@ -309,15 +315,17 @@
 
   
 
+  
 
 
 
 
-  <title>404 Page not found | George Johnson</title>
+
+  <title>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem. | George Johnson</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="4bb5aa740d076aae7f6a535f78f7f2ad" >
 
   
   
@@ -652,51 +660,288 @@
   </div>
 
   <div class="page-body">
-    <div class="universal-wrapper pt-3">
-
-  <h1>Page not found</h1>
-
-  
-  
-  <form class="d-flex align-items-center mb-3">
-    <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
-  </form>
-  
+    <article class="article">
 
   
 
-  <p>Perhaps you were looking for one of these?</p>
+
+
+
+
+
+
+
+
+
+
+
+  
 
   
   
   
-  <h2>Latest</h2>
-  <ul>
+<div class="article-container pt-3">
+  <h1>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem.</h1>
+
+  
+
+  
     
-      <li><a href="/blog/polyhedron/">Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem.</a></li>
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
     
-      <li><a href="/note/maths_collection/">Geometry and Calculus Practice Paper</a></li>
+
+  <span >
+      George Johnson</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
     
-      <li><a href="/blog/partition/">Even Degree Graph Partition</a></li>
     
-      <li><a href="/blog/sm5/">Symmetries of the Standard Model V: Summary and Extensions</a></li>
+      
+          Last updated on
+      
     
-      <li><a href="/blog/sm4/">Symmetries of the Standard Model IV: Discrete Symmetries</a></li>
-    
-      <li><a href="/blog/sm3/">Symmetries of the Standard Model III: The Higgs Sector</a></li>
-    
-      <li><a href="/blog/sm2/">Symmetries of the Standard Model II: The Quark Sector</a></li>
-    
-      <li><a href="/blog/sm1/">Symmetries of the Standard Model I: Overview</a></li>
-    
-      <li><a href="/blog/utilities/">Utilities Problem on General Compact Surfaces</a></li>
-    
-      <li><a href="/note/hatcher/">Algebraic Topology Solutions</a></li>
-    
-  </ul>
+    Jan 24, 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/geometry/">Geometry</a>, <a href="/category/topology/">Topology</a></span>
   
 
 </div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="eulers-polyhedron-formula">Euler&rsquo;s Polyhedron Formula</h2>
+<p>There is a wonderful theorem due to Euler (1752) which states that for a convex polyhedron with $V$ vertices, $E$ edges and $F$ faces,</p>
+<p>$$ V + F - E = 2 \ . $$</p>
+<p>Here is one proof of this result.</p>
+<h2 id="the-angle-defect-formula">The Angle Defect Formula</h2>
+<p>For a triangle drawn on the plane, the sum of the interior angles is $\pi$. For a triangle drawn on the surface of a unit sphere, whose sides are arcs of great circles, the internal angles $\alpha,\beta,\gamma$ satisfy</p>
+<p>$$ \alpha + \beta + \gamma - \pi = text{area \ of \ triangle} \ . $$</p>
+<p>To prove this, consider extending the sides of the triangle into three great circles. These divide the sphere into eight regions. By the symmetry of the figure under the exchange of antipodal points, our triangle and the three faces which neighbour it constitute exactly half the area of the sphere. The total area of these four regions is hence $2 \pi$.</p>
+<p>Now our triangle together with any one of the neighbouring regions form the surface of a spherical wedge. A wedge of angle $\theta$ has surface area $2 \theta$ (this gives an area $4 \pi$ when $\theta = 2 \pi$). If we consider the three possible wedges, their total area hence sums to</p>
+<p>$$ 2(\alpha + \beta + \gamma) \ . $$</p>
+<h2 id="back-to-euler">Back to Euler</h2>
+<p>dfsd</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu613f47e83fcc2c23947176e8611d720b_531182_270x270_fill_q75_lanczos_center.jpg" alt="George Johnson">
+    
+
+    <div class="media-body">
+      <h5 class="card-title">George Johnson</h5>
+      <h6 class="card-subtitle">Lecturer in Applied Mathematics</h6>
+      <p class="card-text">My research interests include theoretical aspects of black holes and their connections with cosmology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/johnson-george" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://physics.stackexchange.com/users/30217/gj255" target="_blank" rel="noopener">
+        <i class="fab fa-stack-exchange"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://inspirehep.net/" target="_blank" rel="noopener">
+        <i class="ai ai-inspire"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
   </div>
 
   <div class="page-footer">

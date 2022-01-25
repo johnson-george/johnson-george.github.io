@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet theorem</title>
+      <title>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet Theorem</title>
       <link>/blog/polyhedron/</link>
       <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       <guid>/blog/polyhedron/</guid>
@@ -23,33 +23,33 @@
 &lt;p&gt;In this post we will sketch a proof of this result, and then extend it to non-convex polyhedra. Our starting point will be a result in the subject of spherical geometry.&lt;/p&gt;
 &lt;h2 id=&#34;the-angle-defect-formula&#34;&gt;The Angle Defect Formula&lt;/h2&gt;
 &lt;p&gt;For a triangle drawn on the plane, the sum of the interior angles is $\pi$. For a triangle drawn on the surface of a unit sphere, whose sides are arcs of great circles, the internal angles $\alpha,\beta,\gamma$ satisfy&lt;/p&gt;
-&lt;p&gt;$$ \alpha + \beta + \gamma - \pi = \text{area \ of \ triangle} \ . $$&lt;/p&gt;
+&lt;p&gt;$$ \alpha + \beta + \gamma - \pi = \text{area of triangle} \ . $$&lt;/p&gt;
 &lt;p&gt;To prove this, consider extending the sides of the triangle into three great circles. These divide the sphere into eight regions. By the symmetry of the figure under the exchange of antipodal points, our triangle and the three faces which neighbour it constitute exactly half the area of the sphere. The total area of these four regions is hence $2 \pi$.&lt;/p&gt;
-&lt;p&gt;Now our triangle together with any one of the neighbouring regions form the surface of a spherical wedge. A wedge of angle $\theta$ has surface area $2 \theta$ (this gives an area $4 \pi$ when $\theta = 2 \pi$). If we consider the three possible wedges in turn, their total area hence sums to&lt;/p&gt;
+&lt;p&gt;Now our triangle together with any one of the three neighbouring regions form the surface of a spherical wedge. A wedge of angle $\theta$ has surface area $2 \theta$ (this gives an area $4 \pi$ when $\theta = 2 \pi$). If we consider the three possible wedges in turn, their total area is hence&lt;/p&gt;
 &lt;p&gt;$$ 2(\alpha + \beta + \gamma) \ . $$&lt;/p&gt;
-&lt;p&gt;Now, this total area can be written as the sum of the areas of those regions neighbouring our triangle, plus thrice the area of the triangle. Since we know that the four regions have a total area of $2 \pi$, we can rearrange for the area of our triangle, which gives the angle defect formula above.&lt;/p&gt;
+&lt;p&gt;Now, this total area can be written as the sum of the areas of those regions neighbouring our triangle, plus thrice the area of the triangle. Since we know that the four regions together have an area of $2 \pi$, we can rearrange for the area of our triangle, which gives the angle defect formula quoted above.&lt;/p&gt;
 &lt;h2 id=&#34;back-to-euler&#34;&gt;Back to Euler&lt;/h2&gt;
 &lt;p&gt;With the angle defect formula to hand, we can embark on our proof of Euler&amp;rsquo;s formula. Given any convex polyhedron, choose a point in its interior as the origin and form the projection onto the surface of the unit sphere. Deform the edges so that they form the arcs of great circles (that this is always possible is plausible, though we will not prove it).&lt;/p&gt;
 &lt;p&gt;For any face with four or more vertices, consider inserting a new edge. This adds precisely one face and one edge, and hence leaves unchanged the quantity $\chi = V - E + F$. We can hence, without loss of generality, take our polyhedron to be constructed from triangular faces.&lt;/p&gt;
 &lt;p&gt;For such a polyhedron, each face has three edges, and each edge is shared by two faces. Thus we can relate&lt;/p&gt;
 &lt;p&gt;$$ E = \frac{3}{2} F  \ .$$&lt;/p&gt;
 &lt;p&gt;For each triangular face, we can apply the angle defect formula. Summing over all faces, we find&lt;/p&gt;
-&lt;p&gt;$$ \sum_F (\alpha + \beta + \gamma - \pi) = \text{area\ of\ sphere} = 4 \pi  \ . $$&lt;/p&gt;
+&lt;p&gt;$$ \sum_F (\alpha + \beta + \gamma - \pi) = \text{area of sphere} = 4 \pi  \ . $$&lt;/p&gt;
 &lt;p&gt;This sum over all faces of all internal angles can be reorganised as a sum over all vertices of all angles at each vertex. But the angles at a vertex sum to $2 \pi$, and hence the above formula reads&lt;/p&gt;
 &lt;p&gt;$$ 2 \pi V - \pi F = 4 \pi \ . $$&lt;/p&gt;
-&lt;p&gt;Taken together, these two results combine to give&lt;/p&gt;
+&lt;p&gt;Taken together, the results above can be combined to give:&lt;/p&gt;
 &lt;p&gt;$$ V - E + F = 2  \ .$$&lt;/p&gt;
 &lt;h2 id=&#34;generalising-the-angle-defect-formula&#34;&gt;Generalising the Angle Defect Formula&lt;/h2&gt;
 &lt;p&gt;For those familiar with Riemannian geometry, the notion of an angle defect may appear connected with the notion of parallel transport. Indeed, the failure of a vector to return to itself upon parallel transport around some small rectangle seems to correspond to the failure of the interior angles to sum to $2 \pi$. But this failure can also be quantified by the Riemann tensor, a measure of the curvature of the space.&lt;/p&gt;
-&lt;p&gt;We may thus hope to generalise the angle defect formula to arbitrary curved surfaces thus. Let $K$ be an appropriate scalar curvature, which takes the value $1$ for the unit sphere. Let $\alpha,\beta,\gamma$ be the internal angles of a triangle on this surface, whose edges are geodesics. Then we postulate:&lt;/p&gt;
+&lt;p&gt;We may thus hope to generalise the angle defect formula to arbitrary curved surfaces thus. Let $K$ be an appropriate scalar curvature, which takes the value $1$ for the unit sphere. Let $\alpha,\beta,\gamma$ be the internal angles of a triangle $\triangle$ on this surface, whose edges are geodesics. Then we postulate:&lt;/p&gt;
 &lt;p&gt;$$ \alpha + \beta + \gamma - \pi = \int_{\triangle} K \ \mathrm{d}A \ .$$&lt;/p&gt;
 &lt;p&gt;This formula turns out to be true &amp;mdash; it is called the local Gauss-Bonnet theorem, and holds with $K$ the Gauss curvature of the surface.&lt;/p&gt;
-&lt;h2 id=&#34;the-gauss-bonnet-theorem&#34;&gt;The Gauss-Bonnet theorem&lt;/h2&gt;
-&lt;p&gt;With this new formula to hand, we can repeat the previous analysis for any polyhedron, not necessarily a convex one. First map the polyhedron to some smooth surface, topologically equivalent to it. Deform the edges so that they are geodesics, and insert new edges as before. We then have $E = 3F/2$ as before, but now&lt;/p&gt;
+&lt;h2 id=&#34;the-gauss-bonnet-theorem&#34;&gt;The Gauss-Bonnet Theorem&lt;/h2&gt;
+&lt;p&gt;With this new formula to hand, we can repeat the previous steps for any polyhedron, not necessarily a convex one. First map the polyhedron to some smooth surface, topologically equivalent to it. Deform the edges so that they are geodesics on this surface, and insert new edges so that all faces are triangular. We then have $E = 3F/2$ as before, but now&lt;/p&gt;
 &lt;p&gt;$$ \sum_F (\alpha + \beta + \gamma - \pi) = \int K \ \mathrm{d}A \ .$$&lt;/p&gt;
-&lt;p&gt;Reorganising the sum over faces to a sum over vertices, this gives&lt;/p&gt;
-&lt;p&gt;$$ 2 \pi V - \pi F = \int K \ \mathrm{d}A  \ . $$&lt;/p&gt;
-&lt;p&gt;And altogether we have the global Gauss-Bonnet theorem:&lt;/p&gt;
+&lt;p&gt;Reorganising the sum over faces as a sum over vertices, this gives&lt;/p&gt;
+&lt;p&gt;$$ 2 \pi V - \pi F = \int K \ \mathrm{d}A  \ , $$&lt;/p&gt;
+&lt;p&gt;and altogether we have the global Gauss-Bonnet theorem:&lt;/p&gt;
 &lt;p&gt;$$ V - E + F = \frac{1}{2 \pi} \int K \ \mathrm{d}A  \ . $$&lt;/p&gt;
 &lt;h2 id=&#34;musings&#34;&gt;Musings&lt;/h2&gt;
 &lt;p&gt;At once this theorem tells us two pretty facts about polyhedra and curved surfaces. Firstly, it states that for any two polyhedra which are topologically equivalent, the quantity $\chi = V - E + F$ &amp;mdash; known as the Euler characteristic &amp;mdash; must take the same value, since both can be mapped to the same surface with fixed integrated curvature.&lt;/p&gt;

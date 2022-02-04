@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="A beautiful theorem relating the average curvature of some surface to its topology, via properties of polyhedra with that topology." />
+  <meta name="description" content="A beautiful theorem relating the average curvature of some surface to a property of polyhedra with the same topology." />
 
   
   <link rel="alternate" hreflang="en-us" href="/blog/polyhedron/" />
@@ -295,7 +295,7 @@
   <meta property="og:site_name" content="George Johnson" />
   <meta property="og:url" content="/blog/polyhedron/" />
   <meta property="og:title" content="Euler&#39;s Polyhedron Formula and the Gauss-Bonnet Theorem | George Johnson" />
-  <meta property="og:description" content="A beautiful theorem relating the average curvature of some surface to its topology, via properties of polyhedra with that topology." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+  <meta property="og:description" content="A beautiful theorem relating the average curvature of some surface to a property of polyhedra with the same topology." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
     <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -760,7 +760,7 @@
 <p>To prove this, consider extending the sides of the triangle into three great circles. These divide the sphere into eight regions. By the symmetry of the figure under the exchange of antipodal points, our triangle and the three faces which neighbour it constitute exactly half the area of the sphere. The total area of these four regions is hence $2 \pi$.</p>
 <p>Now our triangle together with any one of the three neighbouring regions form the surface of a spherical wedge. A wedge of angle $\theta$ has surface area $2 \theta$ (this gives an area $4 \pi$ when $\theta = 2 \pi$). If we consider the three possible wedges in turn, their total area is hence</p>
 <p>$$ 2(\alpha + \beta + \gamma) \ . $$</p>
-<p>Now, this total area can be written as the sum of the areas of those regions neighbouring our triangle, plus thrice the area of the triangle. Since we know that the four regions together have an area of $2 \pi$, we can rearrange for the area of our triangle, which gives the angle defect formula quoted above.</p>
+<p>Now, this total area can be written as the sum of the areas of those regions neighbouring our triangle, plus thrice the area of the triangle. Since we know that the four regions together have an area of $2 \pi$, we can rearrange for the area of our triangle, giving the angle defect formula quoted above.</p>
 <h2 id="back-to-euler">Back to Euler</h2>
 <p>With the angle defect formula to hand, we can embark on our proof of Euler&rsquo;s formula. Given any convex polyhedron, choose a point in its interior as the origin and form the projection onto the surface of the unit sphere. Deform the edges so that they form the arcs of great circles (that this is always possible is plausible, though we will not prove it).</p>
 <p>For any face with four or more vertices, consider inserting a new edge. This adds precisely one face and one edge, and hence leaves unchanged the quantity $\chi = V - E + F$. We can hence, without loss of generality, take our polyhedron to be constructed from triangular faces.</p>
@@ -770,7 +770,7 @@
 <p>$$ \sum_F (\alpha + \beta + \gamma - \pi) = \text{area of sphere} = 4 \pi  \ . $$</p>
 <p>This sum over all faces of all internal angles can be reorganised as a sum over all vertices of all angles at each vertex. But the angles at a vertex sum to $2 \pi$, and hence the above formula reads</p>
 <p>$$ 2 \pi V - \pi F = 4 \pi \ . $$</p>
-<p>Taken together, the results above can be combined to give:</p>
+<p>Taken together, the results above can be combined to give Euler&rsquo;s formula:</p>
 <p>$$ V - E + F = 2  \ .$$</p>
 <h2 id="generalising-the-angle-defect-formula">Generalising the Angle Defect Formula</h2>
 <p>For those familiar with Riemannian geometry, the notion of an angle defect may appear connected with the notion of parallel transport. Indeed, the failure of a vector to return to itself upon parallel transport around some small rectangle seems to correspond to the failure of the interior angles to sum to $2 \pi$. But this failure can also be quantified by the Riemann tensor, a measure of the curvature of the space.</p>
@@ -786,8 +786,8 @@
 <p>$$ V - E + F = \frac{1}{2 \pi} \int K \ \mathrm{d}A  \ . $$</p>
 <h2 id="musings">Musings</h2>
 <p>At once this theorem tells us two pretty facts about polyhedra and curved surfaces. Firstly, it implies that for any two polyhedra which are topologically equivalent, the quantity $\chi = V - E + F$ &mdash; known as the Euler characteristic &mdash; must take the same value, since both can be mapped to the same surface with fixed integrated curvature.</p>
-<p>Secondly, it implies that for any two smooth surfaces which are topologically equivalent, the integrated curvature must take the same value, since both can be triangulated with the same polyhedron.</p>
-<p>Said more succinctly, the integrated curvature and Euler characteristic are both <strong>topological invariants</strong> of closed surfaces, equal to one another by the Gauss-Bonnet theorem.</p>
+<p>Secondly, it implies that for any two smooth surfaces which are topologically equivalent, the integrated curvature must take the same value, since both surfaces can be triangulated with the same polyhedron.</p>
+<p>Said more succinctly, the integrated curvature and the Euler characteristic are both <strong>topological invariants</strong> of closed surfaces, equal to one another by the Gauss-Bonnet theorem.</p>
 
     </div>
 

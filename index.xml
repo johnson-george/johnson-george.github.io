@@ -35,7 +35,7 @@
 &lt;p&gt;$$ E = \frac{3}{2} F  \ .$$&lt;/p&gt;
 &lt;p&gt;For each triangular face, we can apply the angle defect formula. Summing over all faces, we find&lt;/p&gt;
 &lt;p&gt;$$ \sum_F (\alpha + \beta + \gamma - \pi) = \text{area of sphere} = 4 \pi  \ . $$&lt;/p&gt;
-&lt;p&gt;This sum over all faces of all internal angles can be reorganised as a sum over all vertices of all angles at each vertex. But the angles at a vertex sum to $2 \pi$, and hence the above formula reads&lt;/p&gt;
+&lt;p&gt;This sum over all faces of all internal angles of each face can be reorganised as a sum over all vertices of all angles at each vertex. But the angles at a vertex sum to $2 \pi$, and hence the above formula reads&lt;/p&gt;
 &lt;p&gt;$$ 2 \pi V - \pi F = 4 \pi \ . $$&lt;/p&gt;
 &lt;p&gt;Taken together, the results above can be combined to give Euler&amp;rsquo;s formula:&lt;/p&gt;
 &lt;p&gt;$$ V - E + F = 2  \ .$$&lt;/p&gt;

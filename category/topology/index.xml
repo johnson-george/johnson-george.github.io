@@ -5,12 +5,47 @@
     <link>/category/topology/</link>
       <atom:link href="/category/topology/index.xml" rel="self" type="application/rss+xml" />
     <description>Topology</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Mar 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
       <title>Topology</title>
       <link>/category/topology/</link>
     </image>
+    
+    <item>
+      <title>Are Irrotational Vector Fields Conservative? An Excursion into Algebraic Topology</title>
+      <link>/blog/derham/</link>
+      <pubDate>Sun, 20 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>/blog/derham/</guid>
+      <description>&lt;h2 id=&#34;conservative-and-irrotational-vector-fields&#34;&gt;Conservative and Irrotational Vector Fields&lt;/h2&gt;
+&lt;p&gt;A smooth vector field $\mathbf{F}$ in $\mathbb{R}^3$ is known as &lt;strong&gt;conservative&lt;/strong&gt; if it can be written as the gradient of a scalar field: $\mathbf{F} = \nabla f$. A vector field is termed &lt;strong&gt;irrotational&lt;/strong&gt; if it has zero curl: $\nabla \times \mathbf{F} = \mathbf{0}$. It is not hard to check that all conservative vector fields are irrotational.&lt;/p&gt;
+&lt;p&gt;The converse also happens to be true: an irrotational vector field on $\mathbb{R}^3$ is conservative. One consequence of this is that the line integral of an irrotational field between any two points is independent of the path taken.&lt;/p&gt;
+&lt;h2 id=&#34;an-exception&#34;&gt;An Exception&lt;/h2&gt;
+&lt;p&gt;In electromagnetism, the magnetic field around a static current-carrying wire obeys AmpEre&amp;rsquo;s law: $\nabla \times \mathbf{B} = \mathbf{0}$. We may thus write the magnetic field in terms of a so-called magnetic scalar potential, $\mathbf{B} = \nabla \psi$. However, it is clear from the circulating nature of the solution&lt;/p&gt;
+&lt;p&gt;$$ \mathbf{B}= ? $$&lt;/p&gt;
+&lt;p&gt;that the integral of $\mathbf{B}$ along a circle around the wire is non-zero. This apparent conflict with the above statements can be resolved in two ways: either we note that $\mathbf{B}$ fails to be irrotational inside the wire, where it obeys the equation $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$; or we don&amp;rsquo;t consider the wire to be part of our space, and treat our field as defined not on all of $\mathbb{R}^3$, but on $\mathbb{R}^3 - \mathrm{line}$.&lt;/p&gt;
+&lt;p&gt;Taking this latter viewpoint, an interesting question poses itself: what features of a space permit or prevent us from expressing irrotational vector fields as the gradient of a scalar field? What differs between $M = \mathbb{R}^3 - \mathrm{line}$ and $\mathbb{R}^3$? The answer to this question lies in the domain of topology.&lt;/p&gt;
+&lt;h2 id=&#34;de-rhams-theorem&#34;&gt;De Rham&amp;rsquo;s Theorem&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;first de Rham cohomology group&lt;/strong&gt; measures the extent to which this cannot be done. What is meant by extent? Say something about equivalence classes. Thus $H^1(M) = \mathbb{R}$ and $H^1(\mathbb{R}^3) = 0$.&lt;/p&gt;
+&lt;p&gt;The crucial result of this subject is de Rham&amp;rsquo;s theorem, which states that the de Rham cohomology groups are isomorphic to the homology groups of the space:&lt;/p&gt;
+&lt;p&gt;$$ H^r(M) = H_r(M) $$&lt;/p&gt;
+&lt;p&gt;The homology groups of a space describe its topology. In particular, they are invariant under homotopy equivalence (continuous deformations of the space).&lt;/p&gt;
+&lt;h2 id=&#34;real-or-integer-homology&#34;&gt;Real or Integer Homology?&lt;/h2&gt;
+&lt;p&gt;Homology groups of spaces are typically treated with integer coefficients, rather than the real coefficients as in de Rham&amp;rsquo;s theorem.&lt;/p&gt;
+&lt;p&gt;Consider the space $\mathb{R}P^2 \times \mathbb{R}$. This is homotopy equivalent to $\mathbb{R}P^2$ and hence has first homology group $H_1 = \mathbb{Z}_2$. Thus, in terms of real homology&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;homology-or-homotopy&#34;&gt;Homology or Homotopy?&lt;/h2&gt;
+&lt;p&gt;It is sometimes said that irrotational vector fields are conservative when the domain of the field is &lt;em&gt;simply connected&lt;/em&gt;. To be simply connected is to have trivial first &lt;em&gt;homotopy&lt;/em&gt; group, $\pi_1$. Like the first homology group, the first homotopy group measures codimension-one holes in our space.&lt;/p&gt;
+&lt;p&gt;However, the first homology and first homotopy groups are in general different. The relation between them is given by the Hurewicz theorem, which states that the first homology group is the abelianisation of the first homotopy group &amp;mdash; that is, the quotient of $\pi_1$ under the equivalence relation $xy \sim yx$.&lt;/p&gt;
+&lt;p&gt;Thus, if our space is simply connected, then it also has trivial first homology group, and irrotational vector fields are conservative, as is claimed. However, the above discussion shows that simple connectedness isn&amp;rsquo;t a necessary condition for this. Indeed, any space with a fundamental group which has trivial abelianisation will have this property. Such groups as known as &lt;em&gt;perfect groups&lt;/em&gt;, and are in some sense maximally non-abelian. The smallest non-trivial example is the alternating group $A_5$.&lt;/p&gt;
+&lt;p&gt;Perhaps the simplest construction of a space with perfect fundamental group is the &lt;strong&gt;PoincarE homology sphere&lt;/strong&gt;. This is obtained as the quotient of SO(3) by the icosohedral group $I = A_5$, the rotational symmetries of the icosohedron. This space can hence be thought of as the space of all geometrically distinguishable positions of the icosohedron. Passing to the the double cover, we can also write this as the quotient $S^3 / 2I$. The fundamental group of this space is $2I$, which is perfect.&lt;/p&gt;
+&lt;p&gt;Of course, a simpler example would be simply $\mathb{R}P^2 \times \mathbb{R}$ as in the previous section. Here the first homology and first homotopy groups are equal and non-trivial, but the first de Rham cohomology is nevertheless trivial.&lt;/p&gt;
+&lt;h2 id=&#34;generalisation&#34;&gt;Generalisation&lt;/h2&gt;
+&lt;p&gt;That all these groups are termed the &amp;lsquo;first&amp;rsquo; of their kind suggests that higher homology and cohomology groups exist. Indeed they do, and de Rham&amp;rsquo;s theorem states that the $n^\mathrm{th}$ homology and $n^\mathrm{th}$ cohomology groups of a space are isomorphic.&lt;/p&gt;
+&lt;p&gt;By way of example, the second de Rham cohomology group measures the extent to which a &lt;em&gt;solenoidal vector field&lt;/em&gt; (one with zero divergence) can be written as the curl of another vector field. The second homology group measures the number of codimension-two holes in the space.&lt;/p&gt;
+&lt;p&gt;There is no simple relation between higher homology and homotopy groups. However, though some find them more abstract, it is the homology groups which perhaps more closely match one&amp;rsquo;s intuition with the holes in a space.&lt;/p&gt;
+&lt;p&gt;For example, the space $\mathbb{R}^3$ with a point and a line removed has second homology group $\mathbb{Z}$, measuring the single codimension-two hole in the space. The second homotopy group, by contrast, is more complicated: $\pi_2 = \mathbb{Z}^\mathbb{Z}$. This larger group arises from the fact that we can wrap our 2-sphere around the missing line as well as around our point, and this gives homotopically different maps.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Euler&#39;s Polyhedron Formula and the Gauss-Bonnet Theorem</title>

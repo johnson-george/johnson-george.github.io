@@ -1,0 +1,1153 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.1.0 for Hugo" />
+  
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="George Johnson" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A seemingly simple question in vector calculus and its suprisingly deep connections with topology." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="/blog/cohomology/" />
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <style>
+    mjx-container[jax="CHTML"][display="true"] {
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+    }
+    </style>
+    <script src="/js/mathjax-config.js"></script>
+    
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6e11732b75f8dbcc51f6574144ac4bce.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/index.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_32x32_fill_lanczos_center_2.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_180x180_fill_lanczos_center_2.png" />
+
+  <link rel="canonical" href="/blog/cohomology/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="George Johnson" />
+  <meta property="og:url" content="/blog/cohomology/" />
+  <meta property="og:title" content="Are Irrotational Vector Fields Conservative? An Excursion into Algebraic Topology | George Johnson" />
+  <meta property="og:description" content="A seemingly simple question in vector calculus and its suprisingly deep connections with topology." /><meta property="og:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" />
+    <meta property="twitter:image" content="/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-03-28T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-03-28T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Are Irrotational Vector Fields Conservative? An Excursion into Algebraic Topology | George Johnson</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="491f15277f6808e553053f0220ab7f8d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.226a9011996d125bf3fe4a5f22353a49.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">George Johnson</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">George Johnson</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#notes"><span>Notes</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Are Irrotational Vector Fields Conservative? An Excursion into Algebraic Topology</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      George Johnson</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Mar 28, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/geometry/">Geometry</a>, <a href="/category/topology/">Topology</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="conservative-and-irrotational-vector-fields">Conservative and Irrotational Vector Fields</h2>
+<p>A smooth vector field $\mathbf{F}$ in $\mathbb{R}^3$ is known as <strong>conservative</strong> if it can be written as the gradient of a scalar field: $\mathbf{F} = \nabla f$. A vector field is termed <strong>irrotational</strong> if it has zero curl: $\nabla \times \mathbf{F} = \mathbf{0}$. It is not hard to check that all conservative vector fields are irrotational.</p>
+<p>The converse also happens to be true:</p>
+<blockquote>
+<p><em>Theorem 1:</em> an irrotational vector field on $\mathbb{R}^3$ is conservative.</p>
+</blockquote>
+<p>One consequence of this is that the line integral of an irrotational field between any two points is independent of the path taken.</p>
+<h2 id="an-exception">An Exception</h2>
+<p>In electromagnetism, the magnetic field around a static current-carrying wire obeys Ampère&rsquo;s Law: $\nabla \times \mathbf{B} = \mathbf{0}$. We may thus hope to write the magnetic field in terms of a so-called magnetic scalar potential, $\mathbf{B} = \nabla \psi$. However, it is clear from the circulating nature of the solution,</p>
+<p>$$ \mathbf{B}= \frac{\mu_0 I}{2 \pi r} \mathbf{e}_\phi  \ ,$$</p>
+<p>that the integral of $\mathbf{B}$ along a circle enclosing the wire is non-zero. In fact an everywhere-defined scalar potential does not exist. This apparent conflict with Theorem 1 can be resolved in one of two ways: either we note that $\mathbf{B}$ fails to be irrotational inside the wire, where it obeys the equation $\nabla \times \mathbf{B} = \mu_0 \mathbf{J}$; or we consider the wire not to be part of our space, and treat our field as defined not on all of $\mathbb{R}^3$ (as required for the theorem to hold), but on $\mathbb{R}^3 \setminus \mathrm{line}$.</p>
+<p>Taking this latter viewpoint, we are led to an interesting question: what features of a space permit or prevent us from expressing irrotational vector fields as the gradient of scalar fields? What is the pertinent difference between $\mathbb{R}^3$ and $M = \mathbb{R}^3 \setminus \mathrm{line}$ which causes Theorem 1 to hold for one but not the other? The answer to this question lies in the domain of topology.</p>
+<h2 id="de-rhams-theorem">De Rham&rsquo;s Theorem</h2>
+<p>Given a space $M$, we can go beyond the question of whether or not Theorem 1 holds on $M$, and ask <em>to what extent</em> the theorem holds. To be precise, let us define an equivalence relation on the space of all vector fields on $M$ by identifying $\mathbf{F}$ and $\mathbf{G}$ if their difference is the gradient of a scalar field: $\mathbf{F} \sim \mathbf{G} \iff \mathbf{F} - \mathbf{G} = \nabla f$. This partitions the set of all vector fields on our space into classes. The space of all such classes is known as the <strong>first de Rham cohomology group</strong> $H^1(M)$. Thus, Theorem 1 above can be recast in this language as the statement that for $\mathbb{R}^3$ only one equivalence class exists, or $H^1(\mathbb{R}^3) = \{0\}$.</p>
+<p>The crucial result of this subject is de Rham&rsquo;s theorem, which relates this cohomology group to the topology of the space, as described by the <strong>first homology group</strong> $H_1(M)$. This is a measure of the number of loops in our space which do not form the boundary of any surface. For example, any loop in $\mathbb{R}^3$ can always be thought of as the edge of some disc. However, a loop in $M = \mathbb{R}^3 \setminus \mathrm{line}$ that encircles the missing line bounds no surface (that lies entirely in the space). We thus say that $H_1(\mathbb{R}^3) = \{0\}$, whilst $H_1(M) = \mathbb{R}$.</p>
+<p>As the names imply, there are higher homology and cohomology groups. Indeed they are defind for $r$ up to the dimension of our space (in this case three). De Rham&rsquo;s theorem is now remarkably simple to state:</p>
+<blockquote>
+<p><em>Theorem 2:</em> the rth cohomology group and rth homology group of a space $M$ are isomorphic: $ H^r(M) \cong H_r(M) $.</p>
+</blockquote>
+<p>Thus, the trivial first homology of $\mathbb{R}^3$, in conjunction with de Rham&rsquo;s theorem, implies Theorem 1 above. Moreover, we also have that $H^1(M) = \mathbb{R}$, which means that any irrotational vector field on $M$ can be written as $\mathbf{F} = \mathbf{B}_I + \nabla f$, where $\mathbf{B}_I$ (with $I \in \mathbb{R})$ is a one-parameter family of irrotational fields. Indeed, the field $\mathbf{B}$ above serves precisely as this family.</p>
+<h2 id="real-or-integer-homology">Real or Integer Homology?</h2>
+<p>The homology groups that appear in de Rham&rsquo;s theorem are defined with real coefficients, and may more explicitly be written $H_r(M;\mathbb{R})$. In other contexts, we more commonly work with the <strong>integral</strong> homology groups $H_r(M;\mathbb{Z})$, which are defined with integer coefficients.</p>
+<p>The integral homology of a space is a somewhat &lsquo;finer&rsquo; topological invariant, and indeed determines the real homology uniquely. In particular, where an integral homology group is a direct sum of $k$ copies of $\mathbb{Z}$ and a finite abelian group, the corresponding real homology group will simply be $\mathbb{R}^k$. This extra finite group &mdash; known as the torsion subgroup &mdash; describes non-trivial loops that the real homology does not detect.</p>
+<p>Consequently, it is possible for a space to have non-trivial first (integral) homology group and yet nevertheless have the property that all irrotational vector fields are conservative. Perhaps the simplest example is the space $X = \mathbb{R}P^2 \times \mathbb{R}$. This is homotopy equivalent to the real projective plane $\mathbb{R}P^2$ and hence has first homology group $H_1(X;\mathbb{Z}) = \mathbb{Z}_2$.</p>
+<h2 id="homology-or-homotopy">Homology or Homotopy?</h2>
+<p>It is sometimes said that irrotational vector fields are conservative when the domain of the field is <strong>simply connected</strong>. To be simply connected is to have trivial <strong>first homotopy group</strong>, $\pi_1$. Like the first homology group, the first homotopy group in some sense measures the non-trivial loops in our space.</p>
+<p>However, the first homology and first homotopy groups are in general different. A relation between them is provided by the Hurewicz theorem, which states that the first (integral) homology group is the abelianisation of the first homotopy group &mdash; that is, the quotient of $\pi_1$ under the equivalence relation $xy \sim yx$.</p>
+<p>Thus, if our space is simply connected, then it also has trivial first homology group, and irrotational vector fields are conservative, as is claimed. However, the above discussion shows that simple connectedness isn&rsquo;t a necessary condition for this property to hold. Indeed, any space with a fundamental group which has trivial abelianisation will have this property. Such groups as known as <strong>perfect groups</strong>, and are in some sense maximally non-abelian. The smallest non-trivial example is the alternating group $A_5$.</p>
+<p>An important example of a space with perfect fundamental group is the <strong>Poincaré homology sphere</strong>. This is obtained as the quotient of $SO(3)$ &mdash; the rotational symmetries of 3D space &mdash; by the icosahedral group $I \cong A_5$ &mdash; the rotational symmetries of the icosahedron. This quotient can hence be thought of as the space of all geometrically distinguishable orientations of the icosahedron. Passing to the double cover of both groups, we can also write this as the quotient $Y = S^3 / 2I$, where $2I$ is the binary icosahedral group (a perfect group also). The fundamental group of this space $\pi_1(Y) = 2I$.</p>
+<p>The above story leads to a great deal of interesting mathematics. However, if we seek a space which is not simply connected but for which irrotational vector fields are conservative, a simpler example would simply exploit the different between real and integral homology. For example, the space $X = \mathbb{R}P^2 \times \mathbb{R}$ considered in the previous section has $\pi_1(X) = H_1(X;\mathbb{Z}) = \mathbb{Z}_2$, but the first de Rham cohomology group is nevertheless trivial.</p>
+<h2 id="generalising-higher-cohomology">Generalising: Higher Cohomology</h2>
+<p>Just as the curl of the gradient of any scalar field is zero, so the divergence of the curl of any vector field is zero. So, just as above, we can ask: to what extent can a <strong>solenoidal vector field</strong> (one with zero divergence) be written as the curl of another vector field? The answer to this question depends on the space $M$ our fields live on, and is quantified by by the second de Rham cohomology group, $H^2(M)$.</p>
+<p>We can also define higher homology groups. Where the first homology group quantifies the number of non-trivial loops in our space, the second homology group $H_2(M)$ quantifies the non-trivial closed surfaces (or more precisely, those surfaces which are not the boundaries of some volume). All closed surfaces in $\mathbb{R}^3$ bound their interior, and so $H_2(\mathbb{R}^3) = \{0\}$. However, remove a point from $\mathbb{R}^3$ and this is no longer the case &mdash; surfaces which enclose this point are not the boundaries of any volume. We hence have $H_2(\mathbb{R}^3 \setminus \mathrm{point}) = \mathbb{R}$.</p>
+<p>As we noted above, de Rham&rsquo;s theorem states that the $r^\mathrm{th}$ homology and $r^\mathrm{th}$ cohomology groups of a space are isomorphic. Thus, there exist solenoidal fields on $\mathbb{R}^3 \setminus \mathrm{point}$ which cannot be written as the curl of another vector field. The magnetic field around a magnetic monopole is an example of such a field. This fact (after some explication) leads to a famous observation of Dirac, that the existence of a magnetic monopole in our universe would necessitate the quantisation of electric charge.</p>
+<p>There is no relation between higher homology and homotopy groups in general (although the Hurewicz theorem provides a condition under which they are isomorphic). Thus, one should not make the mistake of invoking the second homotopy group $\pi_2$ to conclude that a vector potential must exist, as the following example illustrates.</p>
+<p>Let $Z$ be the space $T^2 \times \mathbb{R}$, where $T^2$ is the 2-torus. Then $H_2(Z) = \mathbb{R}$ but $\pi_2(Z) = \{0\}$. Despite having trivial second homotopy group, there exist solenoidal vector fields which cannot be written as the curl of another vector field. The simplest example of such a field is $\mathbf{B} = B \mathbf{e}_3$, corresponding to a constant vector field pointing along the $\mathbb{R}$ direction. Integrating this field over the torus at some fixed $z \in \mathbb{R}$ gives a positive number, yet the integral of any curl over such a surface must be zero by Stokes' theorem.</p>
+<p>There is a final chapter to this story which is rarely discussed. The third homology group of a space describes the set of non-trivial volumes. The third de Rham cohomlogy group describes the extent to which a scalar field can be written as the divergence of a vector field. On $\mathbb{R}^3$ this is always possible &mdash; for example, the field $f = c$ can be written as the divergence of $\mathbf{F} = c x \mathbf{e}_1$. On topologically less trivial spaces, such as the 3-sphere, no such vector field exists.</p>
+<h2 id="final-words">Final Words</h2>
+<p>The discussion above has repeatedly featured the curl of a vector field, and so has been inherently three-dimensional. Nevertheless, there is a simple generalisation of the above ideas to higher dimensions. The curl is replaced by a more general operator, the <strong>exterior derivative</strong>. The cohomology groups of a given space capture the extent to which certain fields (namely, differential forms) can be expressed as the exterior derivative of others. As in three dimensions, these groups are isomorphic to the corresponding homology groups, which describe the number and nature of the holes in our space.</p>
+<p>This connection between calculus and topology has far-reaching implications, well beyond the seemingly innocuous question we first asked about conservative and irrotational vector fields.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu613f47e83fcc2c23947176e8611d720b_531182_270x270_fill_q75_lanczos_center.jpg" alt="George Johnson">
+    
+
+    <div class="media-body">
+      <h5 class="card-title">George Johnson</h5>
+      <h6 class="card-subtitle">Lecturer in Applied Mathematics</h6>
+      <p class="card-text">My research interests include theoretical aspects of black holes and their connections with cosmology.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/johnson-george" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://physics.stackexchange.com/users/30217/gj255" target="_blank" rel="noopener">
+        <i class="fab fa-stack-exchange"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://inspirehep.net/" target="_blank" rel="noopener">
+        <i class="ai ai-inspire"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+        
+        
+      
+      
+      
+      
+      Powered by the Academic theme for Hugo.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    <script src="/js/bootstrap.bundle.min.6aed84840afc03ab4d5750157f69c120.js"></script>
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.b61a8f62b6e5c0cd322c8158c5b5dfb6.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>

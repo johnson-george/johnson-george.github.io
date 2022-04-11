@@ -46,7 +46,7 @@ for i in reversed(range(k)):
 
 solution = longsubseq[0][1:] 
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;I don&amp;rsquo;t know that Python dictionaries are necessarily the fastest way to implement this idea, but they are conceptually clean at least.&lt;/p&gt;
+&lt;p&gt;I don&amp;rsquo;t know that dictionaries are necessarily the fastest way to implement this idea, but they are conceptually clean at least.&lt;/p&gt;
 </description>
     </item>
     

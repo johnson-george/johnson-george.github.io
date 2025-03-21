@@ -7,7 +7,7 @@
     <description>Quantum Field Theory</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_2.png</url>
+      <url>/media/icon_hu7bc565721a69e427bf94bf1315c635aa_13529_512x512_fill_lanczos_center_3.png</url>
       <title>Quantum Field Theory</title>
       <link>/category/quantum-field-theory/</link>
     </image>
@@ -201,7 +201,7 @@ The matrix $V = U_u^\dagger U_d$ is known as the CKM matrix. A general unitary m
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;p&gt;Since neither $C$, $P$, nor $T$ is anomalous nor spontaneously broken by the vacuum, we here classify these symmetries according to whether they are respected in the following three cases:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;QCD: we set $g = g&#39; = 0$.&lt;/li&gt;
+&lt;li&gt;QCD: we set $g = g&amp;rsquo; = 0$.&lt;/li&gt;
 &lt;li&gt;Electroweak: we set $g_s = 0$.&lt;/li&gt;
 &lt;li&gt;QED: we set $g_s = 0$ and ignore the Higgs and massive gauge bosons.&lt;/li&gt;
 &lt;/ol&gt;
@@ -275,20 +275,20 @@ $$ Y_u^\dagger Y_u = Y_d^\dagger Y_d \quad \mathrm{and} \quad  Y_e^\dagger Y_e =
 &lt;h2 id=&#34;exactness-----kinetic-terms-and-hypercharge&#34;&gt;Exactness &amp;mdash; Kinetic Terms and Hypercharge&lt;/h2&gt;
 &lt;p&gt;If $SU(2)_L \times SU(2)_R$ is truly the full symmetry group of the Higgs potential, and the first factor is the familiar gauged $SU(2)_L$ group, then hypercharge must be a subgroup of the second factor. Indeed, it is not too difficult to show that hypercharge acts on the Higgs $\Phi$ as the $T^3_R$ generator of $SU(2)_R$. However, hypercharge does not act on the quarks and leptons in this way. In fact, the generator of hypercharge can be written
 $$ Y = T^3_R + B/2 - L/2 \ ,$$
-where $B$ and $L$ are the generators of baryon number and lepton number respectively. Since only some subgroup of $SU(2)_R$ is gauged, and not the entirety of it, $SU(2)_R$ is not an exact symmetry of the theory (unless we set $g&#39; = 0$). To see this explicitly from the Lagrangian, we can consider the Higgs kinetic terms.&lt;/p&gt;
+where $B$ and $L$ are the generators of baryon number and lepton number respectively. Since only some subgroup of $SU(2)_R$ is gauged, and not the entirety of it, $SU(2)_R$ is not an exact symmetry of the theory (unless we set $g&amp;rsquo; = 0$). To see this explicitly from the Lagrangian, we can consider the Higgs kinetic terms.&lt;/p&gt;
 &lt;p&gt;Without gauge couplings, the kinetic terms of the Higgs are invariant under the full $SU(2)_L \times SU(2)_R$ symmetry group, just as the potential is. When we gauge the $SU(2)_L$ subgroup, the additional terms in the Lagrangian (coupling the Higgs to the gauge fields) are only invariant as a result of the global transformation properties of the gauge fields:
 $$ W_\mu \to U W_\mu U^{-1} \ .$$
 Thus, the problematic terms are those that involve the hypercharge gauge field $B_\mu$ (proportional to the matrix $T_R^3$), which does not transform under the action of the generators $T_R^1$ and $T_R^2$, nor commute with them:
-$$ \begin{align} \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \ &amp;amp;\mathrm{tr}(B^\mu (1 - i\alpha_iT_R^i)  \Phi^\dagger \Phi (1 + i\alpha_j T_R^j) B_\mu) \\&lt;br&gt;
+$$ \begin{align} \mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \to \ &amp;amp;\mathrm{tr}(B^\mu (1 - i\alpha_iT_R^i)  \Phi^\dagger \Phi (1 + i\alpha_j T_R^j) B_\mu) \\
 \neq \ &amp;amp;\mathrm{tr}(B^\mu \Phi^\dagger \Phi  B_\mu) \ . \end{align}$$&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Exercise:&lt;/em&gt; Show that the kinetic terms for the fermions also break $SU(2)_R$ explicitly when $g&#39; \neq 0$.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Exercise:&lt;/em&gt; Show that the kinetic terms for the fermions also break $SU(2)_R$ explicitly when $g&amp;rsquo; \neq 0$.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;To summarise: both the Yukawa terms and the coupling to the hypercharge gauge boson explicitly break the full $SU(2)_L \times SU(2)_R$ symmetry, but they leave intact both $SU(2)_L$ and the $T^3_R$ generator of $SU(2)_R$.&lt;/p&gt;
 &lt;h2 id=&#34;fermion-symmetries-and-anomalies&#34;&gt;Fermion Symmetries and Anomalies&lt;/h2&gt;
 &lt;p&gt;Having considered the Higgs sector in some detail, we should ask whether there are any additional symmetries that act only on the fermions. If the Yukawa matrices are general (as they are in reality), the only possible symmetries are $U(1)$ rephasings of fermion flavours and chiralities. In fact, as we will justify more fully in Part IV, the only such symmetries are the vectorial and flavour-blind symmetries $U(1)_B$ and $U(1)_L$.&lt;/p&gt;
 &lt;p&gt;Though exact, both of these symmetries suffer an electroweak anomaly:
-$$ \partial_\mu J_B^\mu = \partial_\mu J_L^\mu = \frac{n_g}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma}\left( g^2 W^a_{\mu \nu} W^a_{\rho \sigma} - {g&#39;}^2 B_{\mu \nu} B_{\rho \sigma}  \right) \ .$$&lt;/p&gt;
+$$ \partial_\mu J_B^\mu = \partial_\mu J_L^\mu = \frac{n_g}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma}\left( g^2 W^a_{\mu \nu} W^a_{\rho \sigma} - {g&amp;rsquo;}^2 B_{\mu \nu} B_{\rho \sigma}  \right) \ .$$&lt;/p&gt;
 &lt;p&gt;Since the divergences of the baryon number current and lepton number current are identical, we see that the combination of global symmetries $B - L$ is non-anomalous, and indeed is the only such exact global continuous symmetry in the Standard Model.&lt;/p&gt;
 &lt;h2 id=&#34;summary&#34;&gt;Summary&lt;/h2&gt;
 &lt;table&gt;
@@ -327,6 +327,7 @@ $$ \partial_\mu J_B^\mu = \partial_\mu J_L^\mu = \frac{n_g}{64 \pi^2} \epsilon^{
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;[//]: &amp;lt;&amp;gt; (Note that $SU(2)_L$ here is gauged, as is the hypercharge subgroup of $SU(2)_R \times U(1)_{B-L}$.)&lt;/p&gt;
 </description>
     </item>
     
@@ -480,7 +481,7 @@ $$ \partial_\mu J_5^\mu = -\frac{n_f g_s^2}{32 \pi^2} \epsilon^{\mu \nu \rho \si
 &lt;li&gt;Yukawa couplings between the fermions and the Higgs.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Schematically, this Lagrangian is:&lt;/p&gt;
-&lt;p&gt;$$ \begin{align} \mathcal{L} = &amp;amp;-\frac{1}{4} F^a_{\mu \nu} F^{a\mu \nu} \\ &amp;amp;+ \bar{\psi} i  \gamma^\mu D_\mu \psi \\ &amp;amp;+ |D_\mu \phi|^2 - V(\phi) \\ &amp;amp;- Y_d \bar{Q}_L \phi d_R - Y_u \bar{Q}_{L} \phi^c u_R + \mathrm{h.c.} \\ &amp;amp;- Y_e \bar{L}_L \phi e_R - Y_\nu \bar{L}_{L} \phi^c \nu_R + \mathrm{h.c.} \end{align} $$&lt;/p&gt;
+&lt;p&gt;$$ \begin{align} \mathcal{L} = &amp;amp;-\frac{1}{4} F^a_{\mu \nu} F^{a\mu \nu} \\ &amp;amp;+ \bar{\psi} i  \gamma^\mu D_\mu \psi \\ &amp;amp;+ |D_\mu \phi|^2 - V(\phi) \\ &amp;amp;- Y_d \bar{Q}_L \phi d_R - Y_u \bar{Q}_{L} \phi^c u_R + \mathrm{h.c.} \\ &amp;amp;- Y_e \bar{L}&lt;em&gt;L \phi e_R - Y&lt;/em&gt;\nu \bar{L}_{L} \phi^c \nu_R + \mathrm{h.c.} \end{align} $$&lt;/p&gt;
 &lt;p&gt;There is an additional class of term one can add to the Lagrangian whose effects are more subtle. These are the theta terms, one for each factor of the gauge group:&lt;/p&gt;
 &lt;p&gt;$$ \mathcal{L}_\theta =  \frac{\theta g^2}{64 \pi^2} \epsilon^{\mu \nu \rho \sigma} F^a_{\mu \nu} F^a_{\rho \sigma} \ . $$&lt;/p&gt;
 &lt;p&gt;We will ignore these terms until Part IV.&lt;/p&gt;
